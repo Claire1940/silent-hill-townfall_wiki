@@ -10,15 +10,20 @@ import { LatestGuidesAccordion } from "@/components/home/LatestGuidesAccordion";
 import {
   AlertTriangle,
   ArrowRight,
+  Building2,
   BookOpen,
   Check,
   ChevronRight,
   Clock,
+  Cpu,
   Eye,
   Gamepad2,
   Home,
+  Languages,
   MessageCircle,
+  Monitor,
   Package,
+  Radio,
 } from "lucide-react";
 
 interface PageProps {
@@ -617,12 +622,13 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallGameplayCombatCrtv.intro}
             </p>
           </div>
-          <div className="space-y-4">
+          <div className="grid gap-4 lg:grid-cols-2">
             {homepage.modules.silentHillTownfallGameplayCombatCrtv.items.map((item) => (
               <div
                 key={item.title}
-                className="flex gap-4 rounded-2xl border border-[hsl(var(--nav-theme)/0.28)] bg-[hsl(var(--nav-theme)/0.06)] p-6"
+                className="relative overflow-hidden rounded-3xl border border-[hsl(var(--nav-theme)/0.28)] bg-[hsl(var(--nav-theme)/0.06)] p-6 shadow-[0_20px_70px_-50px_hsl(var(--nav-theme))]"
               >
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[hsl(var(--nav-theme-light)/0.7)]" />
                 <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] text-lg font-semibold text-[hsl(var(--nav-theme-light))]">
                   {item.step}
                 </div>
@@ -653,14 +659,17 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallBeginnerGuide.intro}
             </p>
           </div>
-          <div className="space-y-4">
+          <div className="grid gap-4 lg:grid-cols-2">
             {homepage.modules.silentHillTownfallBeginnerGuide.items.map((step, index) => (
               <div
                 key={step.title}
-                className="flex gap-4 rounded-2xl border border-border bg-card p-6"
+                className="rounded-3xl border border-border bg-card p-6 shadow-[0_20px_70px_-55px_hsl(var(--nav-theme))]"
               >
-                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] text-lg font-semibold text-[hsl(var(--nav-theme-light))]">
-                  {index + 1}
+                <div className="mb-4 flex items-center gap-3">
+                  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] text-lg font-semibold text-[hsl(var(--nav-theme-light))]">
+                    {index + 1}
+                  </div>
+                  <div className="h-px flex-1 bg-[hsl(var(--nav-theme)/0.18)]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">{step.title}</h3>
@@ -687,7 +696,30 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallPCRequirementsLanguages.intro}
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl border border-border">
+          <div className="mb-5 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Monitor className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Minimum Target</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                1080p 30fps on Low settings.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Cpu className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Recommended Target</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                4K 30fps on High with balanced upscaling.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Languages className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Language Support</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                English audio with broad text localization support.
+              </p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-[0_24px_80px_-60px_hsl(var(--nav-theme))]">
             <div className="grid grid-cols-1 border-b border-border bg-[hsl(var(--nav-theme)/0.08)] px-5 py-4 text-sm font-semibold md:grid-cols-[1.1fr,1fr,1fr]">
               <div>Feature</div>
               <div>Minimum</div>
@@ -720,11 +752,34 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallDeveloperScreenBurn.intro}
             </p>
           </div>
+          <div className="mb-5 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Building2 className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Studio Base</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Screen Burn develops the game from Glasgow, Scotland.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Radio className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Creative Throughline</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Retro interfaces and signal-driven tension carry into the CRTV.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-5">
+              <Gamepad2 className="h-5 w-5 text-[hsl(var(--nav-theme-light))]" />
+              <p className="mt-3 text-sm font-semibold">Known Previous Work</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Stories Untold and Observation shaped the studio's horror identity.
+              </p>
+            </div>
+          </div>
           <div className="space-y-3">
             {homepage.modules.silentHillTownfallDeveloperScreenBurn.items.map((faq) => (
               <details
                 key={faq.question}
-                className="group overflow-hidden rounded-2xl border border-border bg-card"
+                className="group overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-[hsl(var(--nav-theme)/0.35)]"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold [&::-webkit-details-marker]:hidden">
                   <span>{faq.question}</span>
