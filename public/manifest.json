@@ -1,12 +1,26 @@
 {
-  "name": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-  "short_name": "Lucid Blocks",
-  "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
+  "name": "Silent Hill Townfall Wiki - Release, CRTV & Endings",
+  "short_name": "Townfall Wiki",
+  "description": "Silent Hill Townfall Wiki covering release date, platforms, CRTV mechanics, story clues, puzzles, characters, endings, and pre-order bonuses.",
+  "id": "/",
   "start_url": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
   "orientation": "any",
-  "theme_color": "#1a7a7a",
-  "background_color": "#0a0a0a",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "theme_color": "#c72033",
+  "background_color": "#07090d",
+  "categories": ["games", "entertainment", "reference"],
+  "screenshots": [
+    {
+      "src": "/images/hero.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Silent Hill Townfall key art"
+    }
+  ],
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

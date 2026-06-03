@@ -85,7 +85,12 @@ export default function HomePageClient({
 }: HomePageClientProps) {
   const t = useMessages() as any;
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.lucidblocks.wiki";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://silent-hill-townfall.wiki";
+  const heroImageUrl = `${siteUrl}/images/hero.webp`;
+  const heroVideoUrl =
+    "https://vulcan.dl.playstation.net/img/rnd/202606/0221/84a5d56922e220ffefed1b5c5390cf03d001b04cce91dc58.mp4";
+  const heroVideoWatchUrl =
+    "https://store.playstation.com/en-us/concept/10016947";
 
   // Structured data
   const structuredData = {
@@ -95,15 +100,15 @@ export default function HomePageClient({
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: siteUrl,
-        name: "Lucid Blocks Wiki",
+        name: "Silent Hill Townfall Wiki",
         description:
-          "Complete Lucid Blocks Wiki covering crafting, biomes, creatures, items, achievements, lore, and survival tips for the surreal voxel sandbox on Steam.",
+          "Silent Hill Townfall Wiki covering release details, CRTV mechanics, story clues, puzzles, characters, and survival horror guides for St. Amelia.",
         image: {
           "@type": "ImageObject",
-          url: `${siteUrl}/images/hero.webp`,
+          url: heroImageUrl,
           width: 1920,
           height: 1080,
-          caption: "Lucid Blocks - Surreal Voxel Survival Sandbox",
+          caption: "Silent Hill Townfall official key art",
         },
         potentialAction: {
           "@type": "SearchAction",
@@ -114,11 +119,11 @@ export default function HomePageClient({
       {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
-        name: "Lucid Blocks Wiki",
-        alternateName: "Lucid Blocks",
+        name: "Silent Hill Townfall Wiki",
+        alternateName: "Silent Hill Townfall",
         url: siteUrl,
         description:
-          "Complete Lucid Blocks Wiki resource hub for crafting, biomes, creatures, items, achievements, and survival guides",
+          "Unofficial Silent Hill Townfall Wiki resource hub for release details, CRTV guides, story coverage, and survival horror walkthroughs.",
         logo: {
           "@type": "ImageObject",
           url: `${siteUrl}/android-chrome-512x512.png`,
@@ -127,24 +132,24 @@ export default function HomePageClient({
         },
         image: {
           "@type": "ImageObject",
-          url: `${siteUrl}/images/hero.webp`,
+          url: heroImageUrl,
           width: 1920,
           height: 1080,
-          caption: "Lucid Blocks Wiki - Surreal Voxel Survival Sandbox",
+          caption: "Silent Hill Townfall official key art",
         },
         sameAs: [
-          "https://store.steampowered.com/app/3495730/Lucid_Blocks/",
-          "https://discord.com/invite/lucidblocks",
-          "https://www.reddit.com/r/LucidBlocks/",
-          "https://www.youtube.com/@lucy_b_locks",
+          "https://www.konami.com/games/silenthill/townfall/us/en/",
+          "https://store.playstation.com/en-us/concept/10016947",
+          "https://store.steampowered.com/app/1636440/SILENT_HILL_Townfall/",
+          "https://x.com/SilentHill",
         ],
       },
       {
         "@type": "VideoGame",
-        name: "Lucid Blocks",
-        gamePlatform: ["PC", "Steam"],
+        name: "Silent Hill: Townfall",
+        gamePlatform: ["PS5", "PC", "Steam", "Epic Games Store"],
         applicationCategory: "Game",
-        genre: ["Survival", "Sandbox", "Adventure", "Psychedelic"],
+        genre: ["Psychological Horror", "Survival Horror", "Adventure"],
         numberOfPlayers: {
           minValue: 1,
           maxValue: 1,
@@ -153,18 +158,19 @@ export default function HomePageClient({
           "@type": "Offer",
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
-          url: "https://store.steampowered.com/app/3495730/Lucid_Blocks/",
+          url: heroVideoWatchUrl,
         },
       },
       {
         "@type": "VideoObject",
-        name: "LUCID BLOCKS | AVAILABLE NOW",
+        name: "Silent Hill: Townfall PlayStation Store Preview",
         description:
-          "Official Lucid Blocks video featuring the Steam launch trailer and gameplay preview.",
-        uploadDate: "2026-03-12",
-        thumbnailUrl: `${siteUrl}/images/hero.webp`,
-        embedUrl: "https://www.youtube.com/embed/7C7fybRM_No",
-        url: "https://www.youtube.com/watch?v=7C7fybRM_No",
+          "First-party Silent Hill Townfall gameplay preview sourced from the official PlayStation Store product page.",
+        uploadDate: "2026-06-02",
+        thumbnailUrl: heroImageUrl,
+        contentUrl: heroVideoUrl,
+        embedUrl: heroVideoWatchUrl,
+        url: heroVideoWatchUrl,
       },
     ],
   };
@@ -269,11 +275,13 @@ export default function HomePageClient({
 
       {/* Video Section */}
       <section className="px-4 py-10 md:py-12">
-        <div className="scroll-reveal container mx-auto max-w-5xl">
+        <div className="scroll-reveal container mx-auto max-w-6xl">
           <div className="relative overflow-hidden rounded-2xl">
             <VideoFeature
-              videoId="7C7fybRM_No"
-              title="LUCID BLOCKS | AVAILABLE NOW"
+              videoUrl={heroVideoUrl}
+              watchUrl={heroVideoWatchUrl}
+              posterSrc="/images/hero.webp"
+              title="Silent Hill: Townfall official gameplay preview"
             />
           </div>
         </div>
@@ -779,7 +787,7 @@ export default function HomePageClient({
                 >
                   <div className="mb-3">
                     <span
-                      className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy", "Major Threat", "Elite Threat"].includes(c.role) ? "bg-red-500/10 border-red-500/30 text-red-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}
+                      className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy", "Major Threat", "Elite Threat"].includes(c.role) ? "bg-[hsl(var(--nav-theme)/0.12)] border-[hsl(var(--nav-theme)/0.35)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}
                     >
                       {c.role}
                     </span>
@@ -969,7 +977,7 @@ export default function HomePageClient({
                   <div className="flex items-center gap-2 mb-3">
                     <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
                     <span
-                      className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-red-500/10 border-red-500/30 text-red-400" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}
+                      className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-[hsl(var(--nav-theme)/0.12)] border-[hsl(var(--nav-theme)/0.35)] text-[hsl(var(--nav-theme-light))]" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}
                     >
                       {p.priority}
                     </span>
