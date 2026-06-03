@@ -5,19 +5,22 @@ import { ExternalLink, Play } from "lucide-react";
 
 interface VideoFeatureProps {
   title: string;
-  videoUrl: string;
+  videoId: string;
   watchUrl: string;
   posterSrc: string;
 }
 
 export function VideoFeature({
   title,
-  videoUrl,
+  videoId,
   watchUrl,
   posterSrc,
 }: VideoFeatureProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const embedUrl = useMemo(() => videoUrl, [videoUrl]);
+  const embedUrl = useMemo(
+    () => `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`,
+    [videoId],
+  );
 
   return (
     <div className="space-y-4">
@@ -45,14 +48,12 @@ export function VideoFeature({
             </div>
           </button>
         ) : (
-          <video
+          <iframe
             className="absolute top-0 left-0 h-full w-full"
             src={embedUrl}
-            poster={posterSrc}
-            controls
-            autoPlay
-            playsInline
-            preload="metadata"
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
           />
         )}
       </div>
@@ -64,7 +65,7 @@ export function VideoFeature({
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-white/10 hover:text-foreground transition-colors"
         >
-          View official source
+          Watch on YouTube
           <ExternalLink className="h-4 w-4" />
         </a>
       </div>

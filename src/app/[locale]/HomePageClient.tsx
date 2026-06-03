@@ -87,10 +87,10 @@ export default function HomePageClient({
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://silent-hill-townfall.wiki";
   const heroImageUrl = `${siteUrl}/images/hero.webp`;
-  const heroVideoUrl =
-    "https://vulcan.dl.playstation.net/img/rnd/202606/0221/84a5d56922e220ffefed1b5c5390cf03d001b04cce91dc58.mp4";
-  const heroVideoWatchUrl =
-    "https://store.playstation.com/en-us/concept/10016947";
+  const heroVideoId = "owiC_bApFmU";
+  const heroVideoEmbedUrl = `https://www.youtube.com/embed/${heroVideoId}`;
+  const heroVideoWatchUrl = `https://www.youtube.com/watch?v=${heroVideoId}`;
+  const heroVideoThumbnailUrl = `https://i.ytimg.com/vi/${heroVideoId}/hqdefault.jpg`;
 
   // Structured data
   const structuredData = {
@@ -142,6 +142,7 @@ export default function HomePageClient({
           "https://store.playstation.com/en-us/concept/10016947",
           "https://store.steampowered.com/app/1636440/SILENT_HILL_Townfall/",
           "https://x.com/SilentHill",
+          heroVideoWatchUrl,
         ],
       },
       {
@@ -165,12 +166,16 @@ export default function HomePageClient({
         "@type": "VideoObject",
         name: "Silent Hill: Townfall PlayStation Store Preview",
         description:
-          "First-party Silent Hill Townfall gameplay preview sourced from the official PlayStation Store product page.",
+          "Official Silent Hill Townfall release date trailer published by KONAMI.",
         uploadDate: "2026-06-02",
-        thumbnailUrl: heroImageUrl,
-        contentUrl: heroVideoUrl,
-        embedUrl: heroVideoWatchUrl,
+        thumbnailUrl: [heroVideoThumbnailUrl, heroImageUrl],
+        contentUrl: heroVideoWatchUrl,
+        embedUrl: heroVideoEmbedUrl,
         url: heroVideoWatchUrl,
+        publisher: {
+          "@type": "Organization",
+          name: "KONAMI",
+        },
       },
     ],
   };
@@ -244,7 +249,13 @@ export default function HomePageClient({
             {/* CTA Buttons */}
             <div className="mb-10 flex flex-col justify-center gap-3 sm:flex-row md:mb-12 md:gap-4">
               <button
-                onClick={() => scrollToSection("beginner-guide")}
+                onClick={() =>
+                  window.open(
+                    "https://store.playstation.com/en-us/concept/10016947",
+                    "_blank",
+                    "noopener,noreferrer",
+                  )
+                }
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 md:px-8 md:py-4
                            bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)]
                            text-white rounded-lg font-semibold text-base md:text-lg transition-colors"
@@ -253,7 +264,7 @@ export default function HomePageClient({
                 {t.hero.getFreeCodesCTA}
               </button>
               <a
-                href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+                href="https://store.steampowered.com/app/1636440/SILENT_HILL_Townfall/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 md:px-8 md:py-4
@@ -278,10 +289,10 @@ export default function HomePageClient({
         <div className="scroll-reveal container mx-auto max-w-6xl">
           <div className="relative overflow-hidden rounded-2xl">
             <VideoFeature
-              videoUrl={heroVideoUrl}
+              videoId={heroVideoId}
               watchUrl={heroVideoWatchUrl}
-              posterSrc="/images/hero.webp"
-              title="Silent Hill: Townfall official gameplay preview"
+              posterSrc={heroVideoThumbnailUrl}
+              title="Silent Hill: Townfall release date trailer"
             />
           </div>
         </div>
@@ -1333,21 +1344,21 @@ export default function HomePageClient({
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://discord.com/invite/lucidblocks"
+                    href="https://www.konami.com/games/silenthill/townfall/us/en/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors"
                   >
-                    <MessageCircle className="w-4 h-4" /> Discord{" "}
+                    <MessageCircle className="w-4 h-4" /> Official Site{" "}
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+                    href="https://store.steampowered.com/app/1636440/SILENT_HILL_Townfall/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors"
                   >
-                    Steam Community <ExternalLink className="w-3 h-3" />
+                    Steam Store <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
               </div>
@@ -1408,7 +1419,7 @@ export default function HomePageClient({
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="https://discord.com/invite/lucidblocks"
+                    href="https://www.konami.com/games/silenthill/townfall/us/en/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1418,7 +1429,7 @@ export default function HomePageClient({
                 </li>
                 <li>
                   <a
-                    href="https://x.com/lucidblocks"
+                    href="https://x.com/silenthill"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1428,7 +1439,7 @@ export default function HomePageClient({
                 </li>
                 <li>
                   <a
-                    href="https://steamcommunity.com/app/3495730"
+                    href={heroVideoWatchUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1438,7 +1449,7 @@ export default function HomePageClient({
                 </li>
                 <li>
                   <a
-                    href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+                    href="https://store.playstation.com/en-us/concept/10016947"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"

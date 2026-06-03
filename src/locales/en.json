@@ -34,27 +34,27 @@
     "articlesComingSoon": "Articles coming soon"
   },
   "hero": {
-    "badge": "Surreal Voxel Survival Sandbox",
-    "title": "Lucid Blocks Wiki",
-    "description": "Explore dreamlike biomes, fuse items with Apotheosis, build freely, and survive strange creatures in this surreal open-world sandbox on Steam.",
-    "getFreeCodesCTA": "Explore Crafting Guide",
-    "playOnSteamCTA": "Play on Steam",
+    "badge": "First-Person Psychological Horror",
+    "title": "Silent Hill Townfall Wiki",
+    "description": "Explore Silent Hill Townfall, a first-person psychological horror game set in foggy St. Amelia, Scotland. Track release date, platforms, CRTV mechanics, combat, puzzles, characters, endings, and pre-order bonuses.",
+    "getFreeCodesCTA": "Pre-Order on PlayStation",
+    "playOnSteamCTA": "Pre-Order on Steam",
     "stats": {
       "stat1": {
-        "value": "1,325",
-        "label": "Players Online"
+        "value": "Sep 24, 2026",
+        "label": "Release Date"
       },
       "stat2": {
-        "value": "1,986",
-        "label": "Peak CCU"
+        "value": "PS5, Steam, Epic",
+        "label": "Platforms"
       },
       "stat3": {
-        "value": "97%",
-        "label": "Positive Reviews"
+        "value": "2",
+        "label": "Editions"
       },
       "stat4": {
-        "value": "Mar 12, 2026",
-        "label": "Release Date"
+        "value": "$49.99",
+        "label": "Starting Price"
       }
     }
   },
@@ -785,26 +785,26 @@
     ]
   },
   "cta": {
-    "title": "Ready to Explore Lucid Blocks?",
-    "description": "Join the Lucid Blocks community on Discord for guides, updates, and discussions!",
-    "joinCommunity": "Join Discord",
-    "joinGame": "Play on Steam"
+    "title": "Ready for Silent Hill Townfall?",
+    "description": "Follow official Silent Hill updates, then visit the Townfall site for release details, store links, and new media.",
+    "joinCommunity": "Follow Silent Hill on X",
+    "joinGame": "Visit Official Site"
   },
   "footer": {
-    "title": "Lucid Blocks Wiki",
-    "description": "Your complete resource hub for Lucid Blocks crafting, biomes, creatures, achievements, and survival guides.",
+    "title": "Silent Hill Townfall Wiki",
+    "description": "Your fan-made resource hub for Silent Hill Townfall release details, CRTV mechanics, story clues, endings, and official store links.",
     "resources": "Resources",
     "community": "Community",
     "legal": "Legal",
-    "discord": "Discord",
+    "discord": "Official Site",
     "twitter": "X / Twitter",
-    "steamCommunity": "Steam Community",
-    "steamStore": "Steam Store",
+    "steamCommunity": "YouTube",
+    "steamStore": "PlayStation Store",
     "about": "About",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyrightNotice": "Copyright",
-    "copyright": "© 2026 Lucid Blocks Wiki. Not affiliated with the developers of Lucid Blocks.",
+    "copyright": "© 2026 Silent Hill Townfall Wiki. Not affiliated with KONAMI, Annapurna Interactive, or Screen Burn.",
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {

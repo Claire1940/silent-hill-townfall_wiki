@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
@@ -37,14 +37,28 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.lucidblocks.wiki";
-
-  // 获取 SEO 翻译
-  const t = await getTranslations("seo.home");
+    process.env.NEXT_PUBLIC_SITE_URL || "https://silent-hill-townfall.wiki";
+  const pageUrl = locale === "en" ? siteUrl : `${siteUrl}/${locale}`;
+  const title = "Silent Hill Townfall Wiki - Release, CRTV & Endings";
+  const description =
+    "Silent Hill Townfall Wiki with release date, platforms, pre-order bonuses, CRTV guide, story, characters, combat, puzzles, endings, and St. Amelia map tips.";
 
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    keywords: [
+      "Silent Hill Townfall",
+      "Silent Hill Townfall wiki",
+      "PS5",
+      "Steam",
+      "Epic Games",
+      "CRTV",
+      "St. Amelia",
+      "release date",
+      "endings",
+      "puzzles",
+    ],
     robots: {
       index: true,
       follow: true,
@@ -59,25 +73,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: locale,
-      url: locale === "en" ? siteUrl : `${siteUrl}/${locale}`,
-      siteName: "Lucid Blocks Wiki",
-      title: t("ogTitle"),
-      description: t("ogDescription"),
+      url: pageUrl,
+      siteName: "Silent Hill Townfall Wiki",
+      title,
+      description,
       images: [
         {
           url: `${siteUrl}/images/hero.webp`,
           width: 1920,
           height: 1080,
-          alt: "Lucid Blocks - Surreal Voxel Sandbox",
+          alt: "Silent Hill Townfall key art",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: t("twitterTitle"),
-      description: t("twitterDescription"),
+      title,
+      description,
       images: [`${siteUrl}/images/hero.webp`],
-      creator: "@lucidblocks",
+      creator: "@SilentHill",
     },
     icons: {
       icon: [

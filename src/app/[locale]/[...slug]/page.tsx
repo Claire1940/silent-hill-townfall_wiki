@@ -218,7 +218,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params
   const contentType = slug[0]
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://silent-hill-townfall.wiki'
 
   if (!isValidContentType(contentType)) {
     return { title: 'Not Found' }
@@ -270,13 +270,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     } catch {
       // 如果翻译不存在，使用默认值
-      const defaultTitle = `${contentType.charAt(0).toUpperCase() + contentType.slice(1)} - Lucid Blocks Wiki`
+      const defaultTitle = `${contentType.charAt(0).toUpperCase() + contentType.slice(1)} - Silent Hill Townfall Wiki`
       const path = `/${contentType}`
 
       return {
         title: defaultTitle,
-        description: `Browse all ${contentType} content for Lucid Blocks Wiki`,
+        description: `Browse all ${contentType} content for Silent Hill Townfall Wiki`,
         alternates: buildLanguageAlternates(path, locale as Locale, siteUrl),
+        openGraph: {
+          title: defaultTitle,
+          description: `Browse all ${contentType} content for Silent Hill Townfall Wiki`,
+          url: `${siteUrl}${locale === 'en' ? path : `/${locale}${path}`}`,
+          images: [`${siteUrl}/images/hero.webp`],
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: defaultTitle,
+          description: `Browse all ${contentType} content for Silent Hill Townfall Wiki`,
+          images: [`${siteUrl}/images/hero.webp`],
+        },
         robots: {
           index: true,
           follow: true,
@@ -306,14 +318,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       const fullPath = `/${slug.join('/')}`
 
       return {
-        title: `${metadata.title} - Lucid Blocks Wiki`,
+        title: `${metadata.title} - Silent Hill Townfall Wiki`,
         description: metadata.description,
         alternates: buildLanguageAlternates(fullPath, locale as Locale, siteUrl),
         openGraph: {
           title: metadata.title,
           description: metadata.description,
-          images: metadata.image ? [metadata.image] : [],
+          images: metadata.image ? [metadata.image] : [`${siteUrl}/images/hero.webp`],
           url: `${siteUrl}${locale === 'en' ? fullPath : `/${locale}${fullPath}`}`,
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: metadata.title,
+          description: metadata.description,
+          images: metadata.image ? [metadata.image] : [`${siteUrl}/images/hero.webp`],
         },
         robots: {
           index: true,
@@ -341,14 +359,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           const fullPath = `/${slug.join('/')}`
 
           return {
-            title: `${metadata.title} - Lucid Blocks Wiki`,
+            title: `${metadata.title} - Silent Hill Townfall Wiki`,
             description: metadata.description,
             alternates: buildLanguageAlternates(fullPath, locale as Locale, siteUrl),
             openGraph: {
               title: metadata.title,
               description: metadata.description,
-              images: metadata.image ? [metadata.image] : [],
+              images: metadata.image ? [metadata.image] : [`${siteUrl}/images/hero.webp`],
               url: `${siteUrl}${locale === 'en' ? fullPath : `/${locale}${fullPath}`}`,
+            },
+            twitter: {
+              card: 'summary_large_image',
+              title: metadata.title,
+              description: metadata.description,
+              images: metadata.image ? [metadata.image] : [`${siteUrl}/images/hero.webp`],
             },
             robots: {
               index: true,
