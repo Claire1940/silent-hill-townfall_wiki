@@ -318,7 +318,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#story-simon-ordell"
+              href="#trailer-gameplay-reveal"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <BookOpen className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -330,7 +330,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#st-amelia-locations"
+              href="#story-st-amelia-setting"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <Home className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -342,7 +342,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#crtv-guide"
+              href="#gameplay-combat-crtv"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <Eye className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -354,7 +354,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#combat-stealth"
+              href="#beginner-guide"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <AlertTriangle className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -366,7 +366,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#walkthrough-puzzles"
+              href="#pc-requirements-languages"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <ArrowRight className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -378,7 +378,7 @@ export default async function HomePage({ params }: PageProps) {
               </p>
             </a>
             <a
-              href="#endings-choices"
+              href="#developer-screen-burn"
               className="group rounded-2xl border border-border bg-card p-4 transition-all hover:border-[hsl(var(--nav-theme)/0.5)] hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.08)] md:p-5"
             >
               <MessageCircle className="mb-4 h-10 w-10 rounded-xl bg-[hsl(var(--nav-theme)/0.12)] p-2 text-[hsl(var(--nav-theme-light))]" />
@@ -488,10 +488,7 @@ export default async function HomePage({ params }: PageProps) {
         className="hidden md:flex"
       />
 
-      <section
-        id="editions-bonuses"
-        className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20"
-      >
+      <section id="editions-bonuses" className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
@@ -530,62 +527,76 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section id="story-simon-ordell" className="scroll-mt-24 px-4 py-14 md:py-20">
+      <section id="trailer-gameplay-reveal" className="scroll-mt-24 px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallStory.eyebrow}
+              {homepage.modules.silentHillTownfallTrailerGameplayReveal.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallStory.title}
+              {homepage.modules.silentHillTownfallTrailerGameplayReveal.title}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallStory.intro}
+              {homepage.modules.silentHillTownfallTrailerGameplayReveal.intro}
             </p>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            {homepage.modules.silentHillTownfallStory.beats.map((beat) => (
+          <div className="grid gap-4 md:grid-cols-2">
+            {homepage.modules.silentHillTownfallTrailerGameplayReveal.items.map((item) => (
               <div
-                key={beat.title}
+                key={item.title}
                 className="rounded-2xl border border-border bg-white/5 p-6"
               >
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <span className="rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] px-3 py-1 text-xs font-medium text-[hsl(var(--nav-theme-light))]">
+                    {item.date}
+                  </span>
+                  <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
+                    {item.source}
+                  </span>
+                </div>
                 <h3 className="text-xl font-semibold text-[hsl(var(--nav-theme-light))]">
-                  {beat.title}
+                  {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                  {beat.description}
+                  {item.description}
                 </p>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[hsl(var(--nav-theme-light))] transition-colors hover:text-foreground"
+                >
+                  {item.cta}
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section
-        id="st-amelia-locations"
-        className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20"
-      >
+      <section id="story-st-amelia-setting" className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallLocations.eyebrow}
+              {homepage.modules.silentHillTownfallStorySetting.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallLocations.title}
+              {homepage.modules.silentHillTownfallStorySetting.title}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallLocations.intro}
+              {homepage.modules.silentHillTownfallStorySetting.intro}
             </p>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {homepage.modules.silentHillTownfallLocations.locations.map((location) => (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {homepage.modules.silentHillTownfallStorySetting.items.map((item) => (
               <div
-                key={location.name}
+                key={item.title}
                 className="rounded-2xl border border-border bg-card p-6"
               >
-                <h3 className="text-xl font-semibold">{location.name}</h3>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                  {location.description}
+                  {item.description}
                 </p>
               </div>
             ))}
@@ -593,55 +604,57 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section id="crtv-guide" className="scroll-mt-24 px-4 py-14 md:py-20">
+      <section id="gameplay-combat-crtv" className="scroll-mt-24 px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallCrtv.eyebrow}
+              {homepage.modules.silentHillTownfallGameplayCombatCrtv.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallCrtv.title}
+              {homepage.modules.silentHillTownfallGameplayCombatCrtv.title}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallCrtv.intro}
-            </p>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {homepage.modules.silentHillTownfallCrtv.features.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-2xl border border-[hsl(var(--nav-theme)/0.28)] bg-[hsl(var(--nav-theme)/0.06)] p-6"
-              >
-                <h3 className="text-xl font-semibold text-[hsl(var(--nav-theme-light))]">
-                  {feature.title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="combat-stealth"
-        className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20"
-      >
-        <div className="container mx-auto max-w-5xl">
-          <div className="mb-10 text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallCombat.eyebrow}
-            </p>
-            <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallCombat.title}
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallCombat.intro}
+              {homepage.modules.silentHillTownfallGameplayCombatCrtv.intro}
             </p>
           </div>
           <div className="space-y-4">
-            {homepage.modules.silentHillTownfallCombat.steps.map((step, index) => (
+            {homepage.modules.silentHillTownfallGameplayCombatCrtv.items.map((item) => (
+              <div
+                key={item.title}
+                className="flex gap-4 rounded-2xl border border-[hsl(var(--nav-theme)/0.28)] bg-[hsl(var(--nav-theme)/0.06)] p-6"
+              >
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] text-lg font-semibold text-[hsl(var(--nav-theme-light))]">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-[hsl(var(--nav-theme-light))]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="beginner-guide" className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
+              {homepage.modules.silentHillTownfallBeginnerGuide.eyebrow}
+            </p>
+            <h2 className="text-3xl font-bold md:text-5xl">
+              {homepage.modules.silentHillTownfallBeginnerGuide.title}
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
+              {homepage.modules.silentHillTownfallBeginnerGuide.intro}
+            </p>
+          </div>
+          <div className="space-y-4">
+            {homepage.modules.silentHillTownfallBeginnerGuide.items.map((step, index) => (
               <div
                 key={step.title}
                 className="flex gap-4 rounded-2xl border border-border bg-card p-6"
@@ -661,53 +674,54 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section id="walkthrough-puzzles" className="scroll-mt-24 px-4 py-14 md:py-20">
+      <section id="pc-requirements-languages" className="scroll-mt-24 px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallWalkthrough.eyebrow}
+              {homepage.modules.silentHillTownfallPCRequirementsLanguages.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallWalkthrough.title}
+              {homepage.modules.silentHillTownfallPCRequirementsLanguages.title}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallWalkthrough.intro}
+              {homepage.modules.silentHillTownfallPCRequirementsLanguages.intro}
             </p>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {homepage.modules.silentHillTownfallWalkthrough.chapters.map((chapter) => (
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <div className="grid grid-cols-1 border-b border-border bg-[hsl(var(--nav-theme)/0.08)] px-5 py-4 text-sm font-semibold md:grid-cols-[1.1fr,1fr,1fr]">
+              <div>Feature</div>
+              <div>Minimum</div>
+              <div>Recommended</div>
+            </div>
+            {homepage.modules.silentHillTownfallPCRequirementsLanguages.items.map((item) => (
               <div
-                key={chapter.name}
-                className="rounded-2xl border border-border bg-white/5 p-6"
+                key={item.feature}
+                className="grid grid-cols-1 gap-2 border-b border-border px-5 py-4 text-sm last:border-b-0 md:grid-cols-[1.1fr,1fr,1fr] md:gap-4"
               >
-                <h3 className="text-xl font-semibold">{chapter.name}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                  {chapter.description}
-                </p>
+                <div className="font-semibold">{item.feature}</div>
+                <div className="text-muted-foreground">{item.minimum}</div>
+                <div className="text-muted-foreground">{item.recommended}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section
-        id="endings-choices"
-        className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20"
-      >
+      <section id="developer-screen-burn" className="scroll-mt-24 bg-white/[0.02] px-4 py-14 md:py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[hsl(var(--nav-theme-light))]">
-              {homepage.modules.silentHillTownfallEndings.eyebrow}
+              {homepage.modules.silentHillTownfallDeveloperScreenBurn.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallEndings.title}
+              {homepage.modules.silentHillTownfallDeveloperScreenBurn.title}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-              {homepage.modules.silentHillTownfallEndings.intro}
+              {homepage.modules.silentHillTownfallDeveloperScreenBurn.intro}
             </p>
           </div>
           <div className="space-y-3">
-            {homepage.modules.silentHillTownfallEndings.faqs.map((faq) => (
+            {homepage.modules.silentHillTownfallDeveloperScreenBurn.items.map((faq) => (
               <details
                 key={faq.question}
                 className="group overflow-hidden rounded-2xl border border-border bg-card"

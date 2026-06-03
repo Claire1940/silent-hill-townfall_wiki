@@ -55,78 +55,77 @@
     },
     "tools": {
       "title": "Silent Hill Townfall Module Navigation",
-      "subtitle": "Jump straight to the eight homepage modules and scroll through the topic you need.",
+      "subtitle": "Jump straight to the eight homepage modules and scroll through the Silent Hill Townfall topic you need.",
       "cards": [
         {
-          "title": "Silent Hill Townfall Release",
-          "description": "Launch date, platforms, storefronts, and player format."
+          "title": "Silent Hill Townfall Release and Platforms",
+          "description": "Launch date, storefronts, publisher, and player format."
         },
         {
-          "title": "Silent Hill Townfall Editions",
-          "description": "Standard and Deluxe bonuses, pricing, and pre-order extras."
+          "title": "Silent Hill Townfall Editions and Bonuses",
+          "description": "Standard, Deluxe, pricing, and pre-order rewards."
         },
         {
-          "title": "Silent Hill Townfall Story",
-          "description": "Simon Ordell, the return to town, and the core narrative hook."
+          "title": "Silent Hill Townfall Trailer and Gameplay Reveal",
+          "description": "Official trailers, State of Play footage, and key reveals."
         },
         {
-          "title": "Silent Hill Townfall Locations",
-          "description": "St. Amelia districts, atmosphere, and landmark spaces."
+          "title": "Silent Hill Townfall Story and St. Amelia Setting",
+          "description": "Simon Ordell, foggy St. Amelia, and Scotland 1996."
         },
         {
-          "title": "Silent Hill Townfall CRTV",
-          "description": "Signal tuning, threat detection, and clue gathering."
+          "title": "Silent Hill Townfall Gameplay Combat and CRTV",
+          "description": "First-person survival, stealth, combat, and signal tuning."
         },
         {
-          "title": "Silent Hill Townfall Combat",
-          "description": "Stealth, pressure, melee, firearms, and escape decisions."
+          "title": "Silent Hill Townfall Beginner Guide",
+          "description": "First-run survival advice for exploration, puzzles, and threats."
         },
         {
-          "title": "Silent Hill Townfall Walkthrough",
-          "description": "Chapter flow, puzzle prep, and route planning for launch."
+          "title": "Silent Hill Townfall PC Requirements and Languages",
+          "description": "Windows 11, storage, GPU targets, and supported text languages."
         },
         {
-          "title": "Silent Hill Townfall Endings",
-          "description": "Choice-driven outcomes and spoiler-safe ending questions."
+          "title": "Silent Hill Townfall Developer and Screen Burn",
+          "description": "Screen Burn, No Code history, Konami, and Annapurna roles."
         }
       ]
     },
     "modules": {
       "silentHillTownfallRelease": {
         "title": "Silent Hill Townfall Release and Platforms",
-        "name": "Silent Hill Townfall Release and Platforms",
         "eyebrow": "Release",
         "intro": "Silent Hill Townfall launches as a single-player psychological horror game with confirmed storefront coverage across console and PC.",
         "items": [
           {
             "label": "Release Date",
             "value": "September 24, 2026",
-            "detail": "The global launch date used across current official listings."
+            "detail": "The global launch date announced across the official Silent Hill Townfall listings."
           },
           {
             "label": "Platforms",
             "value": "PlayStation 5, Steam, Epic Games Store",
-            "detail": "Console on PS5, with PC listings on Steam and Epic Games Store."
+            "detail": "The game is confirmed for PS5 and PC through Steam and Epic Games Store."
           },
           {
             "label": "Player Mode",
             "value": "Single-player",
-            "detail": "The experience focuses on one character moving through St. Amelia."
+            "detail": "Silent Hill Townfall is built as a solo horror experience focused on Simon Ordell."
           },
           {
             "label": "Developer and Publishers",
             "value": "Screen Burn, KONAMI, Annapurna Interactive",
-            "detail": "Screen Burn develops the game while KONAMI and Annapurna publish it."
+            "detail": "Screen Burn develops the game while KONAMI and Annapurna Interactive publish it."
           }
         ],
         "stores": [
           {
             "label": "PlayStation Store",
-            "description": "Pre-order the PS5 version and compare editions."
+            "description": "Pre-order the PS5 version and compare Standard and Deluxe editions."
           },
           {
             "label": "Steam",
-            "description": "Track the PC listing, wishlist status, and release page updates."
+            "description": "Track the PC listing, wishlist status, and launch-day page updates."
           },
           {
             "label": "Epic Games Store",
@@ -136,7 +135,6 @@
       },
       "silentHillTownfallEditions": {
         "title": "Silent Hill Townfall Editions and Pre-Order Bonuses",
-        "name": "Silent Hill Townfall Editions and Pre-Order Bonuses",
         "eyebrow": "Editions",
         "intro": "Choose between the base release and the expanded launch package depending on whether you want cosmetic rewards, digital extras, and early access.",
         "items": [
@@ -172,143 +170,244 @@
           }
         ]
       },
-      "silentHillTownfallStory": {
-        "title": "Silent Hill Townfall Story and Simon Ordell",
-        "name": "Silent Hill Townfall Story and Simon Ordell",
+      "silentHillTownfallTrailerGameplayReveal": {
+        "title": "Silent Hill Townfall Trailer and Gameplay Reveal",
+        "eyebrow": "Trailer",
+        "intro": "The official trailer rollout introduces Simon Ordell, St. Amelia, the CRTV pocket television, and the first-person survival horror tone of Silent Hill Townfall.",
+        "items": [
+          {
+            "title": "Silent Hill Townfall Release Date Trailer",
+            "source": "KONAMI YouTube",
+            "date": "June 2026",
+            "description": "Confirms the September 24, 2026 release date, shows new St. Amelia scenes, and pushes pre-orders across official stores.",
+            "href": "https://www.youtube.com/watch?v=owiC_bApFmU",
+            "cta": "Watch release date trailer"
+          },
+          {
+            "title": "Silent Hill Townfall Reveal Trailer",
+            "source": "Annapurna Interactive",
+            "date": "Announcement reveal",
+            "description": "Sets the static-heavy tone, introduces the project, and frames the mystery before the full gameplay breakdown arrived.",
+            "href": "https://www.youtube.com/watch?v=_ccYsjz_EtQ",
+            "cta": "Watch reveal trailer"
+          },
+          {
+            "title": "Silent Hill Townfall State of Play Gameplay Breakdown",
+            "source": "PlayStation Blog",
+            "date": "February 12, 2026",
+            "description": "Details the first-person perspective, stealth, hiding, melee weapons, firearms, and the CRTV as an evolution of the classic radio.",
+            "href": "https://blog.playstation.com/2026/02/12/silent-hill-townfall-reveals-first-person-gameplay-in-a-new-trailer/",
+            "cta": "Read gameplay reveal"
+          },
+          {
+            "title": "Silent Hill Townfall September Launch Details",
+            "source": "PlayStation Blog",
+            "date": "June 2, 2026",
+            "description": "Adds more on Zoe, new enemy pressure, evasion-first encounters, and PS5 features like haptics and adaptive triggers.",
+            "href": "https://blog.playstation.com/2026/06/02/silent-hill-townfall-launches-september-24-on-ps5/",
+            "cta": "Read launch details"
+          }
+        ]
+      },
+      "silentHillTownfallStorySetting": {
+        "title": "Silent Hill Townfall Story and St. Amelia Setting",
         "eyebrow": "Story",
-        "intro": "Silent Hill Townfall follows Simon Ordell as he is drawn back to St. Amelia, where the town, the people he remembers, and the signals on the CRTV begin to align around unfinished business.",
-        "beats": [
+        "intro": "Silent Hill Townfall follows Simon Ordell as he returns to St. Amelia, an isolated island town wrapped in fog, guilt, memory, and unstable analog signals.",
+        "items": [
           {
-            "title": "A Return to Put Things Right",
-            "description": "Simon is called back to St. Amelia with the sense that something unresolved is waiting for him in the fog."
+            "title": "Simon Ordell",
+            "description": "Simon is called back to St. Amelia to put things right, and the town keeps pulling him toward personal damage he has not escaped."
           },
           {
-            "title": "Simon Ordell's Personal Thread",
-            "description": "Medical details, a worn wristband, and the constant presence of the CRTV frame Simon as someone already tied to the town's damage."
+            "title": "St. Amelia",
+            "description": "The island town feels abandoned but never empty, with streets, housing blocks, and waterfront spaces loaded with dread."
           },
           {
-            "title": "Memory, Guilt, and Consequence",
-            "description": "The story leans into loss, fractured recollection, and the cost of every step deeper into town."
+            "title": "Scotland, 1996",
+            "description": "The period setting sharpens the analog identity of the game through damp weather, old tech, and a grounded remote-town atmosphere."
+          },
+          {
+            "title": "Memory, Loss, and Consequence",
+            "description": "Silent Hill Townfall builds story pressure through fractured recollection, grief, and the sense that every choice deepens the damage."
+          },
+          {
+            "title": "CRTV and Static",
+            "description": "The CRTV feeds Simon unstable signals, story fragments, and warning signs that make the town feel alive even when nothing is speaking."
+          },
+          {
+            "title": "Narrative-Driven Puzzles",
+            "description": "Puzzles are framed as part of Simon’s understanding of St. Amelia rather than separate detached brainteasers."
           }
         ]
       },
-      "silentHillTownfallLocations": {
-        "title": "Silent Hill Townfall St. Amelia Locations",
-        "name": "Silent Hill Townfall St. Amelia Locations",
-        "eyebrow": "Locations",
-        "intro": "St. Amelia is the visual anchor of Silent Hill Townfall, mixing coastal isolation, abandoned civic spaces, and fog-sunk streets that turn navigation into part of the dread.",
-        "locations": [
+      "silentHillTownfallGameplayCombatCrtv": {
+        "title": "Silent Hill Townfall Gameplay Combat and CRTV",
+        "eyebrow": "Gameplay",
+        "intro": "Silent Hill Townfall plays entirely in first person, pushing Simon Ordell through tense exploration, stealth pressure, direct combat, narrative-driven puzzles, and CRTV signal reading.",
+        "items": [
           {
-            "name": "Harbor Approaches",
-            "description": "Docks, sea walls, and exposed lanes create a bleak introduction to the island town."
+            "step": 1,
+            "title": "Explore St. Amelia in first person",
+            "description": "The first-person view keeps every corridor, doorway, and shoreline close to Simon, making clue hunting, environmental reading, and horror encounters feel immediate."
           },
           {
-            "name": "Town Streets and Housing Blocks",
-            "description": "Tight alleys, empty homes, and communal buildings make the town feel lived-in even when no one is speaking."
+            "step": 2,
+            "title": "Use the CRTV as your main survival tool",
+            "description": "The CRTV acts like a new version of the classic Silent Hill radio, translating unstable analog signals into warning signs, route clues, and story fragments."
           },
           {
-            "name": "Medical and Utility Spaces",
-            "description": "Clinical interiors and service corridors reinforce Simon's physical condition and the town's failing infrastructure."
+            "step": 3,
+            "title": "Read threats before committing",
+            "description": "Signal shifts, peeking, and careful staging help you judge enemy positions before stepping into a room that can collapse into panic."
           },
           {
-            "name": "1996 Scotland Atmosphere",
-            "description": "Analog tech, damp weather, and a remote Scottish setting give the game a grounded period identity."
+            "step": 4,
+            "title": "Choose melee or firearms when combat is needed",
+            "description": "Melee weapons and firearms are available, but combat is framed as a risky response for bad situations rather than the default solution."
+          },
+          {
+            "step": 5,
+            "title": "Run, distract, hide, or fight",
+            "description": "Some encounters reward evasion more than aggression, so survival depends on breaking line of sight, using the environment, and switching tactics quickly."
+          },
+          {
+            "step": 6,
+            "title": "Solve puzzles that carry story meaning",
+            "description": "Puzzles are woven into Simon's return to St. Amelia, using environmental details and story context to reveal what the town has been hiding."
           }
         ]
       },
-      "silentHillTownfallCrtv": {
-        "title": "Silent Hill Townfall CRTV Guide",
-        "name": "Silent Hill Townfall CRTV Guide",
-        "eyebrow": "CRTV",
-        "intro": "The CRTV is the signature device of Silent Hill Townfall, acting as a portable screen for signal tuning, environmental reading, and story discovery.",
-        "features": [
+      "silentHillTownfallBeginnerGuide": {
+        "title": "Silent Hill Townfall Beginner Guide",
+        "eyebrow": "Beginner Guide",
+        "intro": "Treat Silent Hill Townfall as a survival horror game about attention, restraint, and clean decision-making. The safest first-run habit is to observe before you commit.",
+        "items": [
           {
-            "title": "Signal Tuning",
-            "description": "Adjust the CRTV to lock onto unstable frequencies and reveal where the next clue or threat is building."
+            "step": 1,
+            "title": "Raise the CRTV before entering danger",
+            "description": "Check the CRTV around dark interiors, puzzle spaces, and enemy routes so you can read unstable signals before taking another step."
           },
           {
-            "title": "Threat Detection",
-            "description": "Static and signal changes help you sense hostile movement before an encounter fully breaks open."
+            "step": 2,
+            "title": "Peek before moving into open spaces",
+            "description": "Use corners, cover, and sightlines carefully, because spotting danger first is usually more valuable than landing the first hit."
           },
           {
-            "title": "Narrative Fragments",
-            "description": "The screen delivers recordings, distortions, and story fragments that make the town's history feel active."
+            "step": 3,
+            "title": "Hide or evade when the enemy is too dangerous",
+            "description": "If an encounter starts to spiral, treat escape as the win condition and protect your route out instead of forcing a messy fight."
           },
           {
-            "title": "A New Spin on the Classic Radio",
-            "description": "The CRTV keeps the series tradition of warning systems while giving the feedback a stronger visual role."
+            "step": 4,
+            "title": "Fight only when it gives you a clear advantage",
+            "description": "Weapons matter most when an enemy blocks progress, your escape route is gone, or the room clearly favors a fast decisive response."
+          },
+          {
+            "step": 5,
+            "title": "Treat puzzles as part of the story",
+            "description": "Read notes, props, signals, and room details as connected clues so puzzle solving feels like understanding St. Amelia instead of hunting random switches."
+          },
+          {
+            "step": 6,
+            "title": "Explore carefully because actions matter",
+            "description": "Slow exploration helps you catch optional details, preserve resources, and understand how your actions feed into Silent Hill Townfall's ending paths."
           }
         ]
       },
-      "silentHillTownfallCombat": {
-        "title": "Silent Hill Townfall Combat and Stealth",
-        "name": "Silent Hill Townfall Combat and Stealth",
-        "eyebrow": "Combat",
-        "intro": "Encounters in Silent Hill Townfall are built around pressure, so success comes from choosing when to hide, when to strike, and when to spend resources just to survive the room.",
-        "steps": [
+      "silentHillTownfallPCRequirementsLanguages": {
+        "title": "Silent Hill Townfall PC Requirements and Languages",
+        "eyebrow": "PC Specs",
+        "intro": "PC players need Windows 11 x64, DirectX 12, and 75 GB of storage. Minimum specs target 1080p 30fps on Low, while the recommended setup targets 4K 30fps on High with upscaling.",
+        "items": [
           {
-            "title": "Read the Space First",
-            "description": "Use cover, doorways, and sound cues before committing to any fight in a narrow interior."
+            "feature": "OS",
+            "minimum": "Windows 11 x64",
+            "recommended": "Windows 11 x64"
           },
           {
-            "title": "Use Stealth to Control the Pace",
-            "description": "Breaking line of sight, moving slowly, and setting up an escape path can keep a bad encounter from becoming a collapse."
+            "feature": "CPU",
+            "minimum": "AMD Ryzen 5 3600 / Intel i7-8700K",
+            "recommended": "AMD Ryzen 7 5700X / Intel i7-9700K"
           },
           {
-            "title": "Commit Hard When You Fight",
-            "description": "Melee tools and firearms work best when you already know the route out and the target priority."
+            "feature": "Memory",
+            "minimum": "16 GB RAM",
+            "recommended": "32 GB RAM"
           },
           {
-            "title": "Treat Evasion as a Win Condition",
-            "description": "Some scenes are about surviving the pursuit and preserving your supplies instead of clearing the area."
+            "feature": "GPU",
+            "minimum": "NVIDIA GeForce RTX 2060 Super / AMD Radeon RX 6600",
+            "recommended": "NVIDIA GeForce RTX 3080 / AMD Radeon RX 7800 XT"
+          },
+          {
+            "feature": "DirectX",
+            "minimum": "DirectX 12",
+            "recommended": "DirectX 12"
+          },
+          {
+            "feature": "Storage",
+            "minimum": "75 GB, SSD required",
+            "recommended": "75 GB, NVMe"
+          },
+          {
+            "feature": "Sound Card",
+            "minimum": "Windows Compatible Audio Device",
+            "recommended": "Windows Compatible Audio Device"
+          },
+          {
+            "feature": "Performance Target",
+            "minimum": "Low settings at 1080p 30fps",
+            "recommended": "High settings at 4K 30fps using DLSS, FSR, or TSR Balanced mode"
+          },
+          {
+            "feature": "Audio Language",
+            "minimum": "English",
+            "recommended": "English"
+          },
+          {
+            "feature": "Text Languages",
+            "minimum": "English, French, German, Italian, Japanese, Korean, Polish, Portuguese, Russian, Spanish (Spain), Spanish (Latin America), Chinese (Simplified), Chinese (Traditional)",
+            "recommended": "Same"
+          },
+          {
+            "feature": "Epic Games Store Login",
+            "minimum": "Epic ID",
+            "recommended": "Epic ID"
           }
         ]
       },
-      "silentHillTownfallWalkthrough": {
-        "title": "Silent Hill Townfall Walkthrough and Puzzles",
-        "name": "Silent Hill Townfall Walkthrough and Puzzles",
-        "eyebrow": "Walkthrough",
-        "intro": "The homepage walkthrough module focuses on the route logic already visible in official footage so you can organize a cleaner first run once Silent Hill Townfall unlocks.",
-        "chapters": [
+      "silentHillTownfallDeveloperScreenBurn": {
+        "title": "Silent Hill Townfall Developer, No Code, and Screen Burn",
+        "eyebrow": "Developer",
+        "intro": "Silent Hill Townfall is developed by Screen Burn, the Glasgow studio formerly known as No Code. Its earlier work on Stories Untold and Observation helps explain the project's analog interfaces, dense atmosphere, and narrative-first tension.",
+        "items": [
           {
-            "name": "Arrival and Orientation",
-            "description": "Secure the first safe route, learn where the CRTV is most useful, and note every locked path that loops back later."
+            "question": "Who is developing Silent Hill Townfall?",
+            "answer": "Silent Hill Townfall is developed by Screen Burn, an independent game development studio based in Glasgow, Scotland."
           },
           {
-            "name": "Town Interior Search",
-            "description": "Expect puzzle chains built on collected documents, room sequencing, and tension-heavy revisits through familiar spaces."
+            "question": "Was the Silent Hill Townfall studio previously called No Code?",
+            "answer": "Yes. Screen Burn was founded in 2015 under the original name No Code before later becoming Screen Burn Interactive."
           },
           {
-            "name": "Signal Puzzle Workflow",
-            "description": "When the CRTV reacts, slow down, test the nearby environment, and verify every visual change before moving on."
+            "question": "What games did the Silent Hill Townfall studio make before this project?",
+            "answer": "The studio is known for Stories Untold and Observation, both of which helped define its atmospheric storytelling style."
           },
           {
-            "name": "Launch-Day Route Planning",
-            "description": "Mark dead ends, gather every clue on the first pass, and revisit objective spaces before spending scarce combat resources."
-          }
-        ]
-      },
-      "silentHillTownfallEndings": {
-        "title": "Silent Hill Townfall Endings and Choices",
-        "name": "Silent Hill Townfall Endings and Choices",
-        "eyebrow": "Endings",
-        "intro": "Silent Hill Townfall points toward multiple endings shaped by how you investigate the town, what clues you prioritize, and how you answer the game's pressure points.",
-        "faqs": [
-          {
-            "question": "How do Silent Hill Townfall endings differ?",
-            "answer": "Silent Hill Townfall endings are built around what Simon learns, which threads you follow through St. Amelia, and the tone of the final decisions you carry into the closing stretch."
+            "question": "What is the creative style behind Silent Hill Townfall?",
+            "answer": "The team focuses on atmosphere, story, polished presentation, detailed sound design, and retro interface ideas that fit psychological horror well."
           },
           {
-            "question": "Do Silent Hill Townfall choices matter before the final scene?",
-            "answer": "Yes. Silent Hill Townfall frames choices through exploration order, clue gathering, and encounter behavior rather than saving every consequence for one last dialogue option."
+            "question": "What is KONAMI’s role in Silent Hill Townfall?",
+            "answer": "KONAMI owns the Silent Hill franchise, co-publishes Silent Hill Townfall, and announced the release date and platform rollout."
           },
           {
-            "question": "What should I track to compare Silent Hill Townfall endings?",
-            "answer": "Keep notes on which optional spaces you cleared, what CRTV signals you followed, and how you handled major confrontations so repeated runs show what changed."
+            "question": "What is Annapurna Interactive’s role in Silent Hill Townfall?",
+            "answer": "Annapurna Interactive co-publishes Silent Hill Townfall and supports its storefront presence across PlayStation, Steam, and Epic Games Store."
           },
           {
-            "question": "Can Silent Hill Townfall endings be reviewed without major spoilers?",
-            "answer": "Use a spoiler-safe pass first: compare route differences, missed clues, and late-game decision points before reading any full ending breakdown."
+            "question": "How does No Code’s past work connect to Silent Hill Townfall?",
+            "answer": "The team has long worked with retro interfaces, VHS-style presentation, and story-led design, which fits the CRTV mechanic and first-person tension of Townfall."
           }
         ]
       }
