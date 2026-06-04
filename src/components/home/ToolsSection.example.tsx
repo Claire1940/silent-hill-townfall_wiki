@@ -46,12 +46,13 @@ function IconCardList({ cards, onCardClick }: IconCardListProps) {
 export function ToolsSection() {
   // 使用类型安全的 hook
   const t = useTypedMessages()
+  const tools = (t.homepage as { tools?: { title?: string; subtitle?: string; cards?: IconCard[] } } | undefined)?.tools
 
   // 安全地获取数组（如果不存在返回空数组）
-  const cards = useSafeArray(t.tools.cards)
+  const cards = useSafeArray(tools?.cards)
 
   // 检查是否有数据
-  const hasCards = useHasData(t.tools.cards)
+  const hasCards = useHasData(tools?.cards)
 
   // 如果没有数据，显示空状态
   if (!hasCards) {
@@ -70,10 +71,9 @@ export function ToolsSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            {t.tools.title}{' '}
-            <span className="text-primary">{t.tools.titleHighlight}</span>
+            {tools?.title ?? 'Tools'}
           </h2>
-          <p className="text-muted-foreground text-lg">{t.tools.subtitle}</p>
+          <p className="text-muted-foreground text-lg">{tools?.subtitle ?? ''}</p>
         </div>
 
         {/* 传递给组件时，cards 保证是有效数组 */}
