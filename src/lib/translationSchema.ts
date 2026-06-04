@@ -102,3 +102,8 @@ export function validateModule<T>(
 
 export type Translations = z.infer<typeof TranslationsSchema>
 export type JsonValue = z.infer<typeof JsonValueSchema>
+export type IconCard = {
+  icon?: string
+  title: string
+  description: string
+}
