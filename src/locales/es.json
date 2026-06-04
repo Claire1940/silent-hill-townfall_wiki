@@ -1,1 +1,11 @@
-{}
+{
+  "nav": {
+    "date": "Date",
+    "platforms": "Platforms",
+    "trailer": "Trailer",
+    "guide": "Guide",
+    "combat": "Combat",
+    "story": "Story",
+    "editions": "Editions"
+  }
+}

@@ -6,7 +6,15 @@
       "keywords": "Silent Hill Townfall, Silent Hill Townfall wiki, release date, CRTV, St. Amelia, endings, PS5, Steam, Epic Games"
     }
   },
-  "nav": {},
+  "nav": {
+    "date": "Date",
+    "platforms": "Platforms",
+    "trailer": "Trailer",
+    "guide": "Guide",
+    "combat": "Combat",
+    "story": "Story",
+    "editions": "Editions"
+  },
   "common": {
     "home": "Home",
     "more": "More",
@@ -411,6 +419,148 @@
           }
         ]
       }
+    }
+  },
+  "pages": {
+    "date": {
+      "title": "Silent Hill Townfall Release Date",
+      "description": "Track the official release date, launch window, and store timing for Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Release Date - Launch Timing and Status",
+      "metaDescription": "Follow the Silent Hill Townfall release date, launch status, pre-load timing, and regional rollout details across official store pages.",
+      "categoryLabel": "RELEASE",
+      "whatIs": "What is the Date section?",
+      "whatIsDescription": "The Date section keeps every release-timing article in one place, including the confirmed September 24, 2026 launch date, launch-status questions, and region-specific timing coverage tied to official announcements.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Confirm launch timing fast",
+        "step1Description": "Use this section when you need a direct answer on whether Silent Hill Townfall is out yet, when it launches, and which public date is current.",
+        "step2Title": "Compare regional wording",
+        "step2Description": "Some articles focus on UK timing or broader 2026 coverage, which helps when store pages or media reports phrase the same launch window differently.",
+        "step3Title": "Separate facts from older speculation",
+        "step3Description": "Release-date coverage changes quickly, so these pages help you distinguish confirmed timing from earlier rumor-driven writeups."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Date Articles"
+    },
+    "platforms": {
+      "title": "Silent Hill Townfall Platforms",
+      "description": "See where Silent Hill Townfall is confirmed to launch and how each store page differs.",
+      "metaTitle": "Silent Hill Townfall Platforms - PS5, PC, Steam, and Epic",
+      "metaDescription": "Check confirmed Silent Hill Townfall platforms, storefront links, PC coverage, and the latest platform-specific details for PS5, Steam, and Epic Games Store.",
+      "categoryLabel": "PLATFORMS",
+      "whatIs": "What is the Platforms section?",
+      "whatIsDescription": "The Platforms section covers every storefront and hardware question around Silent Hill Townfall, from PS5 and PC listings to Steam, Epic Games Store, and unconfirmed platform speculation.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Find confirmed stores",
+        "step1Description": "Use these pages to verify whether a platform has an official listing instead of relying on reposted rumors or wishlist speculation.",
+        "step2Title": "Compare PC options",
+        "step2Description": "Steam, Epic Games Store, and broader PC articles help you track which storefront has active pages, features, and launch-day purchase options.",
+        "step3Title": "Avoid unsupported assumptions",
+        "step3Description": "Platform coverage helps separate what KONAMI and Annapurna have confirmed from community guesses about Xbox, Switch 2, or later ports."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Platform Articles"
+    },
+    "trailer": {
+      "title": "Silent Hill Townfall Trailers",
+      "description": "Watch and compare the reveal, teaser, gameplay, and release-date trailers for Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Trailer Guide - Reveal, Gameplay, and Teaser",
+      "metaDescription": "Browse Silent Hill Townfall trailer coverage, including the reveal trailer, gameplay footage, State of Play clips, teaser beats, and release-date video breakdowns.",
+      "categoryLabel": "TRAILER",
+      "whatIs": "What is the Trailer section?",
+      "whatIsDescription": "The Trailer section collects every article built around official videos and presentation beats, including the teaser, reveal trailer, gameplay trailer, release-date trailer, and State of Play coverage.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Review each official video",
+        "step1Description": "These pages help you jump straight to the trailer or presentation beat that introduced a specific mechanic, scene, or release update.",
+        "step2Title": "Track what changed between reveals",
+        "step2Description": "Comparing trailers shows how Silent Hill Townfall moved from an abstract teaser to concrete gameplay, combat, and character details.",
+        "step3Title": "Reuse footage as evidence",
+        "step3Description": "Trailer pages are useful reference points when you want to cite exactly where a visual clue, setting detail, or gameplay system first appeared."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Trailer Articles"
+    },
+    "guide": {
+      "title": "Silent Hill Townfall Guides",
+      "description": "Browse starter guides, overview articles, and practical explainers for Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Guide - Beginner Tips and Core Overviews",
+      "metaDescription": "Read Silent Hill Townfall guide coverage for beginners, game length, trophy planning, overview explainers, and practical pre-launch reference articles.",
+      "categoryLabel": "GUIDE",
+      "whatIs": "What is the Guide section?",
+      "whatIsDescription": "The Guide section gathers broad how-to and overview coverage for Silent Hill Townfall, including beginner guidance, trophy planning, game-length expectations, and general explainers about what the project is.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Start with the basics",
+        "step1Description": "Guide pages are the fastest way to build context if you are new to the project and want a clean overview before reading deeper topic articles.",
+        "step2Title": "Prepare for launch-day play",
+        "step2Description": "Beginner, length, and trophy coverage gives you practical expectations for pacing, completion goals, and how demanding the full experience may be.",
+        "step3Title": "Keep one reference hub",
+        "step3Description": "This category works as the general-purpose layer of the wiki, so you can return here when you need broad answers instead of a narrow mechanic or story detail."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Guide Articles"
+    },
+    "combat": {
+      "title": "Silent Hill Townfall Combat",
+      "description": "Follow first-person gameplay, weapons, stealth, and CRTV-related survival coverage for Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Combat - Gameplay, Weapons, and CRTV Use",
+      "metaDescription": "Explore Silent Hill Townfall combat coverage, including first-person gameplay, guns, weapons, stealth pressure, and how the CRTV supports survival.",
+      "categoryLabel": "COMBAT",
+      "whatIs": "What is the Combat section?",
+      "whatIsDescription": "The Combat section covers the action side of Silent Hill Townfall: first-person pressure, evasive survival, melee and firearm usage, enemy awareness, and the CRTV as a practical tool during tense encounters.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Understand the survival loop",
+        "step1Description": "Combat coverage explains how exploration, threat detection, hiding, and direct confrontation fit together instead of treating battles as isolated set pieces.",
+        "step2Title": "Track weapon expectations",
+        "step2Description": "Weapon and guns pages help you compare confirmed footage with broader survival-horror assumptions about scarcity, pacing, and risk.",
+        "step3Title": "Follow CRTV usage closely",
+        "step3Description": "Because the CRTV affects navigation, warning signals, and puzzle reading, this section is also where core gameplay interpretation tends to sharpen fastest."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Combat Articles"
+    },
+    "story": {
+      "title": "Silent Hill Townfall Story",
+      "description": "Read about Simon Ordell, St. Amelia, monsters, and the wider narrative setup behind Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Story - Simon, St. Amelia, and Timeline Clues",
+      "metaDescription": "Browse Silent Hill Townfall story coverage focused on Simon Ordell, St. Amelia, monsters, setting clues, and the timeline surrounding the game’s psychological horror plot.",
+      "categoryLabel": "STORY",
+      "whatIs": "What is the Story section?",
+      "whatIsDescription": "The Story section collects character, setting, and lore-focused articles for Silent Hill Townfall, including Simon Ordell, St. Amelia, the timeline, monster interpretation, and broader story clues.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Map the narrative setup",
+        "step1Description": "These pages help you piece together who Simon is, why he returns, and how St. Amelia shapes the psychological pressure of the game.",
+        "step2Title": "Track recurring symbols",
+        "step2Description": "Story coverage is where character names, monster motifs, radio-like signals, and town history can be compared across trailers and official descriptions.",
+        "step3Title": "Keep spoilers in context",
+        "step3Description": "As more information appears, this section gives you one place to organize confirmed plot details without mixing them into platform or gameplay coverage."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Story Articles"
+    },
+    "editions": {
+      "title": "Silent Hill Townfall Editions",
+      "description": "Compare pre-order offers, Deluxe content, SteelBook details, and edition-level purchase choices.",
+      "metaTitle": "Silent Hill Townfall Editions - Deluxe, Pre-Order, and SteelBook",
+      "metaDescription": "Compare Silent Hill Townfall editions, including Deluxe Edition bonuses, pre-order rewards, special offers, and SteelBook availability across stores.",
+      "categoryLabel": "EDITIONS",
+      "whatIs": "What is the Editions section?",
+      "whatIsDescription": "The Editions section focuses on buying options for Silent Hill Townfall, including Standard and Deluxe comparisons, pre-order bonuses, retailer extras, and collectible packaging such as SteelBook offers.",
+      "why": "Why read this section?",
+      "whySteps": {
+        "step1Title": "Compare purchase tiers",
+        "step1Description": "Edition pages help you see whether the Deluxe package, early access, soundtrack, or bonus cosmetics justify the higher price for your platform.",
+        "step2Title": "Track retailer extras",
+        "step2Description": "SteelBook and special-edition coverage is useful when availability changes by region or by store partner instead of being universal.",
+        "step3Title": "Avoid duplicate spending",
+        "step3Description": "This section keeps bonus and pre-order information grouped together so you can decide once, instead of piecing together scattered store notes."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Edition Articles"
     }
   }
 }
