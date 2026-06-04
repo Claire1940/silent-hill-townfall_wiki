@@ -1,5 +1,8 @@
-import { getAllContent, CONTENT_TYPES } from '@/lib/content'
-import type { Language, ContentItem } from '@/lib/content'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { CONTENT_TYPES } from '@/lib/content'
+import type { Language, ContentFrontmatter } from '@/lib/content'
 
 export interface ArticleLink {
   url: string
@@ -8,52 +11,79 @@ export interface ArticleLink {
 
 export type ModuleLinkMap = Record<string, ArticleLink | null>
 
-interface ArticleWithType extends ContentItem {
+interface ArticleWithType {
+  slug: string
+  frontmatter: ContentFrontmatter
   contentType: string
+}
+
+function fileNameToSlug(fileName: string): string {
+  return fileName
+    .replace(/[^a-zA-Z0-9\-_]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+function collectArticlesFromDirectory(
+  contentType: string,
+  dir: string,
+  basePath: string[] = [],
+): ArticleWithType[] {
+  if (!fs.existsSync(dir)) return []
+
+  const articles: ArticleWithType[] = []
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name)
+
+    if (entry.isDirectory()) {
+      articles.push(...collectArticlesFromDirectory(contentType, fullPath, [...basePath, entry.name]))
+      continue
+    }
+
+    if (!entry.name.endsWith('.mdx')) continue
+
+    const raw = fs.readFileSync(fullPath, 'utf-8')
+    const { data } = matter(raw)
+    const fileName = entry.name.replace(/\.mdx$/, '')
+
+    articles.push({
+      slug: [...basePath, fileNameToSlug(fileName)].join('/'),
+      frontmatter: data as ContentFrontmatter,
+      contentType,
+    })
+  }
+
+  return articles
 }
 
 // Module sub-field mapping: moduleKey -> { field, nameKey }
 const MODULE_FIELDS: Record<string, { field: string; nameKey: string }> = {
-  lucidBlocksBeginnerGuide: { field: 'steps', nameKey: 'title' },
-  lucidBlocksApotheosisCrafting: { field: 'cards', nameKey: 'name' },
-  lucidBlocksToolsAndWeapons: { field: 'items', nameKey: 'name' },
-  lucidBlocksStorageAndInventory: { field: 'solutions', nameKey: 'name' },
-  lucidBlocksQualiaAndBaseBuilding: { field: 'cards', nameKey: 'name' },
-  lucidBlocksWorldRegions: { field: 'regions', nameKey: 'name' },
-  lucidBlocksCreaturesAndEnemies: { field: 'creatures', nameKey: 'name' },
-  lucidBlocksMobilityGear: { field: 'items', nameKey: 'name' },
-  lucidBlocksFarmingAndGrowth: { field: 'sections', nameKey: 'name' },
-  lucidBlocksBestEarlyUnlocks: { field: 'priorities', nameKey: 'name' },
-  lucidBlocksAchievementTracker: { field: 'groups', nameKey: 'name' },
-  lucidBlocksSingleplayerAndPlatformFAQ: { field: 'faqs', nameKey: 'question' },
-  lucidBlocksSteamDeckAndController: { field: 'faqs', nameKey: 'question' },
-  lucidBlocksSettingsAndAccessibility: { field: 'settings', nameKey: 'name' },
-  lucidBlocksUpdatesAndPatchNotes: { field: 'entries', nameKey: 'title' },
-  lucidBlocksCrashFixAndTroubleshooting: { field: 'steps', nameKey: 'title' },
+  silentHillTownfallRelease: { field: 'items', nameKey: 'label' },
+  silentHillTownfallEditions: { field: 'items', nameKey: 'name' },
+  silentHillTownfallTrailerGameplayReveal: { field: 'items', nameKey: 'title' },
+  silentHillTownfallStorySetting: { field: 'items', nameKey: 'title' },
+  silentHillTownfallGameplayCombatCrtv: { field: 'items', nameKey: 'title' },
+  silentHillTownfallBeginnerGuide: { field: 'items', nameKey: 'title' },
+  silentHillTownfallPCRequirementsLanguages: { field: 'items', nameKey: 'feature' },
+  silentHillTownfallDeveloperScreenBurn: { field: 'items', nameKey: 'question' },
 }
 
 // Extra semantic keywords per module to boost matching for h2 titles
 // These supplement the module title text when matching against articles
 const MODULE_EXTRA_KEYWORDS: Record<string, string[]> = {
-  lucidBlocksBeginnerGuide: ['guide', 'mastering', 'progression', 'crafting', 'starter'],
-  lucidBlocksApotheosisCrafting: ['apotheosis', 'fusion', 'essence'],
-  lucidBlocksToolsAndWeapons: ['crafting recipes', 'frost pick', 'osmium', 'azrael', 'faith wand'],
-  lucidBlocksStorageAndInventory: ['chest', 'cache cube', 'cabinet', 'storage'],
-  lucidBlocksQualiaAndBaseBuilding: ['qualia', 'clonaqualia', 'personal dimensions'],
-  lucidBlocksWorldRegions: ['tiamana', 'leyline', 'biomes', 'regions'],
-  lucidBlocksCreaturesAndEnemies: ['survival', 'combat', 'surreal creatures'],
-  lucidBlocksMobilityGear: ['bee glider', 'hookshot', 'glider', 'movement'],
-  lucidBlocksFarmingAndGrowth: ['seed', 'farming', 'growth', 'material', 'progression', 'crafting'],
-  lucidBlocksBestEarlyUnlocks: ['early', 'osmium', 'frost pick', 'starter', 'progression'],
-  lucidBlocksAchievementTracker: ['achievement', 'tiamana', 'leyline'],
-  lucidBlocksSingleplayerAndPlatformFAQ: ['multiplayer', 'platform', 'co op'],
-  lucidBlocksSteamDeckAndController: ['steam deck', 'controller', 'proton'],
-  lucidBlocksSettingsAndAccessibility: ['full screen', 'controls', 'display'],
-  lucidBlocksUpdatesAndPatchNotes: ['update', 'patch', 'fix'],
-  lucidBlocksCrashFixAndTroubleshooting: ['crash', 'vulkan', 'troubleshooting', 'full screen', 'controls', 'gameplay'],
+  silentHillTownfallRelease: ['release date', 'ps5', 'steam', 'epic games store', 'single-player', 'screen burn'],
+  silentHillTownfallEditions: ['standard edition', 'deluxe edition', 'pre-order', 'steelbook', 'bonus application', 'digital soundtrack'],
+  silentHillTownfallTrailerGameplayReveal: ['state of play', 'release date trailer', 'reveal trailer', 'playstation blog', 'first-person', 'zoe'],
+  silentHillTownfallStorySetting: ['simon ordell', 'st amelia', 'scotland', '1996', 'memory', 'static'],
+  silentHillTownfallGameplayCombatCrtv: ['crtv', 'first person', 'stealth', 'firearms', 'melee', 'puzzles'],
+  silentHillTownfallBeginnerGuide: ['beginner guide', 'survival tips', 'crtv', 'evade', 'hide', 'ending paths'],
+  silentHillTownfallPCRequirementsLanguages: ['pc requirements', 'windows 11', 'directx 12', '75 gb', 'rtx 2060 super', 'supported languages'],
+  silentHillTownfallDeveloperScreenBurn: ['screen burn', 'no code', 'stories untold', 'observation', 'konami', 'annapurna interactive'],
 }
 
-const FILLER_WORDS = ['lucid', 'blocks', '2026', '2025', 'complete', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn', 'master']
+const FILLER_WORDS = ['silent', 'hill', 'townfall', '2026', '2025', 'complete', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn', 'master']
 
 function normalize(text: string): string {
   return text
@@ -71,15 +101,15 @@ function getSignificantTokens(text: string): string[] {
 
 function matchScore(queryText: string, article: ArticleWithType, extraKeywords?: string[]): number {
   const normalizedQuery = normalize(queryText)
-  const normalizedTitle = normalize(article.frontmatter.title)
+  const normalizedTitle = normalize(article.frontmatter.title || '')
   const normalizedDesc = normalize(article.frontmatter.description || '')
   const normalizedSlug = article.slug.replace(/-/g, ' ').toLowerCase()
 
   let score = 0
 
-  // Exact phrase match in title (stripped of "Lucid Blocks")
-  const strippedQuery = normalizedQuery.replace(/lucid blocks?\s*/g, '').trim()
-  const strippedTitle = normalizedTitle.replace(/lucid blocks?\s*/g, '').trim()
+  // Exact phrase match in title after removing the game name.
+  const strippedQuery = normalizedQuery.replace(/silent hill:? townfall\s*/g, '').trim()
+  const strippedTitle = normalizedTitle.replace(/silent hill:? townfall\s*/g, '').trim()
   if (strippedQuery.length > 3 && strippedTitle.includes(strippedQuery)) {
     score += 100
   }
@@ -125,7 +155,7 @@ function findBestMatch(
   if (bestScore >= threshold && bestArticle) {
     return {
       url: `/${bestArticle.contentType}/${bestArticle.slug}`,
-      title: bestArticle.frontmatter.title,
+      title: bestArticle.frontmatter.title || bestArticle.slug,
     }
   }
 
@@ -133,12 +163,20 @@ function findBestMatch(
 }
 
 export async function buildModuleLinkMap(locale: Language): Promise<ModuleLinkMap> {
-  // 1. Load all articles across all content types
+  // 1. Load all articles across all content types from frontmatter.
   const allArticles: ArticleWithType[] = []
   for (const contentType of CONTENT_TYPES) {
-    const items = await getAllContent(contentType, locale)
-    for (const item of items) {
-      allArticles.push({ ...item, contentType })
+    const localeDir = path.join(process.cwd(), 'content', locale, contentType)
+    const enDir = path.join(process.cwd(), 'content', 'en', contentType)
+    const articles = collectArticlesFromDirectory(contentType, localeDir)
+    const fallbackArticles = locale === 'en' ? [] : collectArticlesFromDirectory(contentType, enDir)
+    const seen = new Set<string>()
+
+    for (const article of [...articles, ...fallbackArticles]) {
+      const key = `${article.contentType}:${article.slug}`
+      if (seen.has(key)) continue
+      seen.add(key)
+      allArticles.push(article)
     }
   }
 
@@ -149,7 +187,7 @@ export async function buildModuleLinkMap(locale: Language): Promise<ModuleLinkMa
 
   // 3. For each module, match h2 title and sub-items
   for (const [moduleKey, fieldConfig] of Object.entries(MODULE_FIELDS)) {
-    const moduleData = enMessages.modules?.[moduleKey]
+    const moduleData = enMessages.homepage?.modules?.[moduleKey]
     if (!moduleData) continue
 
     // Match module h2 title (use extra keywords + lower threshold for broader matching)

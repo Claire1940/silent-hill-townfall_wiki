@@ -2,13 +2,13 @@ import { getAllContent, CONTENT_TYPES, type ContentType } from '@/lib/content'
 import { routing } from '@/i18n/routing'
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Lucid Blocks Wiki'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://silent-hill-townfall.wiki'
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Silent Hill Townfall Wiki'
 
   const lines: string[] = []
   lines.push(`# ${siteName}`)
   lines.push('')
-  lines.push(`> ${siteName} is a comprehensive game wiki providing guides, tips, walkthroughs, and community resources.`)
+  lines.push(`> ${siteName} tracks release details, CRTV mechanics, story clues, puzzles, endings, and survival horror guides for Silent Hill Townfall.`)
   lines.push('')
   lines.push(`Website: ${baseUrl}`)
   lines.push(`Languages: ${routing.locales.join(', ')}`)

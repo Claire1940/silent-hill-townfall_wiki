@@ -4,9 +4,11 @@ import { buildLanguageAlternates } from "@/lib/i18n-utils";
 import { type Locale } from "@/i18n/routing";
 import { getLatestArticles } from "@/lib/getLatestArticles";
 import type { Language } from "@/lib/content";
+import { buildModuleLinkMap } from "@/lib/buildModuleLinkMap";
 import { AdBanner, NativeBannerAd } from "@/components/ads";
 import { SidebarAd } from "@/components/ads/SidebarAd";
 import { LatestGuidesAccordion } from "@/components/home/LatestGuidesAccordion";
+import Link from "next/link";
 import {
   AlertTriangle,
   ArrowRight,
@@ -72,6 +74,7 @@ export default async function HomePage({ params }: PageProps) {
   const { locale } = await params;
   const homepage = enMessages.homepage;
   const latestArticles = await getLatestArticles(locale as Language, 30);
+  const moduleLinkMap = await buildModuleLinkMap(locale as Language);
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://silent-hill-townfall.wiki";
   const heroVideoId = "owiC_bApFmU";
@@ -111,6 +114,31 @@ export default async function HomePage({ params }: PageProps) {
         },
       },
     ],
+  };
+  const getModuleHref = (moduleKey: string) => {
+    const linkData = moduleLinkMap[moduleKey];
+    if (!linkData) {
+      return null;
+    }
+
+    return locale === "en" ? linkData.url : `/${locale}${linkData.url}`;
+  };
+
+  const renderModuleHeading = (moduleKey: string, title: string) => {
+    const href = getModuleHref(moduleKey);
+
+    if (!href) {
+      return title;
+    }
+
+    return (
+      <Link
+        href={href}
+        className="transition-colors hover:text-[hsl(var(--nav-theme-light))] hover:underline underline-offset-4"
+      >
+        {title}
+      </Link>
+    );
   };
 
   return (
@@ -420,7 +448,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallRelease.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallRelease.title}
+              {renderModuleHeading(
+                "silentHillTownfallRelease",
+                homepage.modules.silentHillTownfallRelease.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallRelease.intro}
@@ -500,7 +531,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallEditions.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallEditions.title}
+              {renderModuleHeading(
+                "silentHillTownfallEditions",
+                homepage.modules.silentHillTownfallEditions.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallEditions.intro}
@@ -539,7 +573,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallTrailerGameplayReveal.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallTrailerGameplayReveal.title}
+              {renderModuleHeading(
+                "silentHillTownfallTrailerGameplayReveal",
+                homepage.modules.silentHillTownfallTrailerGameplayReveal.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallTrailerGameplayReveal.intro}
@@ -587,7 +624,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallStorySetting.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallStorySetting.title}
+              {renderModuleHeading(
+                "silentHillTownfallStorySetting",
+                homepage.modules.silentHillTownfallStorySetting.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallStorySetting.intro}
@@ -616,7 +656,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallGameplayCombatCrtv.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallGameplayCombatCrtv.title}
+              {renderModuleHeading(
+                "silentHillTownfallGameplayCombatCrtv",
+                homepage.modules.silentHillTownfallGameplayCombatCrtv.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallGameplayCombatCrtv.intro}
@@ -653,7 +696,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallBeginnerGuide.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallBeginnerGuide.title}
+              {renderModuleHeading(
+                "silentHillTownfallBeginnerGuide",
+                homepage.modules.silentHillTownfallBeginnerGuide.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallBeginnerGuide.intro}
@@ -690,7 +736,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallPCRequirementsLanguages.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallPCRequirementsLanguages.title}
+              {renderModuleHeading(
+                "silentHillTownfallPCRequirementsLanguages",
+                homepage.modules.silentHillTownfallPCRequirementsLanguages.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallPCRequirementsLanguages.intro}
@@ -746,7 +795,10 @@ export default async function HomePage({ params }: PageProps) {
               {homepage.modules.silentHillTownfallDeveloperScreenBurn.eyebrow}
             </p>
             <h2 className="text-3xl font-bold md:text-5xl">
-              {homepage.modules.silentHillTownfallDeveloperScreenBurn.title}
+              {renderModuleHeading(
+                "silentHillTownfallDeveloperScreenBurn",
+                homepage.modules.silentHillTownfallDeveloperScreenBurn.title,
+              )}
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
               {homepage.modules.silentHillTownfallDeveloperScreenBurn.intro}

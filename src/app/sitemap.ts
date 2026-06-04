@@ -6,26 +6,24 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://silent-hill-townfa
 
 // 内容类型优先级配置
 const contentTypePriority: Record<string, number> = {
-	'guides': 0.9,
-	'crafting': 0.9,
-	'biomes': 0.8,
-	'creatures': 0.8,
-	'items': 0.8,
-	'achievements': 0.7,
-	'lore': 0.7,
-	'support': 0.6,
+	'date': 0.9,
+	'platforms': 0.85,
+	'trailer': 0.85,
+	'guide': 0.85,
+	'combat': 0.8,
+	'story': 0.8,
+	'editions': 0.8,
 }
 
 // 内容更新频率配置
 const contentTypeChangeFrequency: Record<string, 'daily' | 'weekly' | 'monthly'> = {
-	'guides': 'weekly',
-	'crafting': 'weekly',
-	'biomes': 'weekly',
-	'creatures': 'weekly',
-	'items': 'weekly',
-	'achievements': 'monthly',
-	'lore': 'monthly',
-	'support': 'monthly',
+	'date': 'weekly',
+	'platforms': 'weekly',
+	'trailer': 'weekly',
+	'guide': 'weekly',
+	'combat': 'weekly',
+	'story': 'monthly',
+	'editions': 'monthly',
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

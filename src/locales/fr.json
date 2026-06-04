@@ -1,11 +1,566 @@
 {
+  "seo": {
+    "home": {
+      "title": "Wiki Silent Hill Townfall - Sortie, CRTV et fins",
+      "description": "Silent Hill Townfall Wiki couvre la date de sortie, les plates-formes, les éditions, les notes de l'histoire de St. Amelia, la mécanique CRTV, les combats, les énigmes et les fins.",
+      "keywords": "Silent Hill Townfall, wiki Silent Hill Townfall, date de sortie, CRTV, St. Amelia, fins, PS5, Steam, Epic Games"
+    }
+  },
   "nav": {
     "date": "Date",
-    "platforms": "Platforms",
-    "trailer": "Trailer",
+    "platforms": "Plateformes",
+    "trailer": "Bande-annonce",
     "guide": "Guide",
     "combat": "Combat",
-    "story": "Story",
-    "editions": "Editions"
+    "story": "Histoire",
+    "editions": "Éditions"
+  },
+  "common": {
+    "home": "Maison",
+    "more": "Plus",
+    "playNow": "Précommandez maintenant",
+    "switchLanguage": "Changer de langue",
+    "switchTheme": "Changer de thème",
+    "lightMode": "Mode lumière",
+    "darkMode": "Mode sombre",
+    "notFound": "Page introuvable",
+    "notFoundDescription": "La page que vous recherchez n'existe pas.",
+    "backToHome": "Retour à la maison",
+    "relatedArticles": "Articles connexes",
+    "readMore": "En savoir plus",
+    "articlesComingSoon": "Articles à venir"
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Horreur psychologique à la première personne",
+      "title": "Wiki Silent Hill - Chute de la ville",
+      "description": "Suivez les détails de la sortie de Silent Hill Townfall, les éditions, les indices d'histoire, les emplacements de St. Amelia, les systèmes CRTV, les outils de combat, les itinéraires de puzzle et les fins à partir d'un centre de jeu d'horreur ciblé.",
+      "primaryCta": "Précommande sur PlayStation",
+      "secondaryCta": "Voir sur Steam",
+      "stats": [
+        {
+          "value": "24 septembre 2026",
+          "label": "Date de sortie"
+        },
+        {
+          "value": "PS5, Steam, Epic Games",
+          "label": "Plateformes"
+        },
+        {
+          "value": "Standard, Deluxe",
+          "label": "Éditions"
+        },
+        {
+          "value": "Sainte Amélie",
+          "label": "Paramètre"
+        }
+      ]
+    },
+    "video": {
+      "title": "Bande-annonce de la date de sortie de Silent Hill Townfall",
+      "caption": "Regardez la bande-annonce officielle axée sur Simon Ordell, St. Amelia et la configuration d'horreur psychologique pilotée par CRTV.",
+      "watchLabel": "Regarder sur YouTube"
+    },
+    "tools": {
+      "title": "Navigation dans le module Silent Hill Townfall",
+      "subtitle": "Accédez directement aux huit modules de la page d'accueil et faites défiler le sujet Silent Hill Townfall dont vous avez besoin.",
+      "cards": [
+        {
+          "title": "Sortie et plateformes de Silent Hill Townfall",
+          "description": "Date de lancement, vitrines, éditeur et format de lecteur."
+        },
+        {
+          "title": "Éditions et bonus de Silent Hill Townfall",
+          "description": "Récompenses Standard, Deluxe, tarifs et précommande."
+        },
+        {
+          "title": "Bande-annonce et gameplay de Silent Hill Townfall",
+          "description": "Bandes-annonces officielles, images de l'état des lieux et révélations clés."
+        },
+        {
+          "title": "Histoire de Silent Hill Townfall et décor de Sainte-Amélie",
+          "description": "Simon Ordell, St. Amelia brumeuse et Écosse 1996."
+        },
+        {
+          "title": "Silent Hill Townfall Gameplay Combat et CRTV",
+          "description": "Survie à la première personne, furtivité, combat et réglage des signaux."
+        },
+        {
+          "title": "Guide du débutant pour Silent Hill Townfall",
+          "description": "Conseils de survie de première exécution pour l'exploration, les énigmes et les menaces."
+        },
+        {
+          "title": "Configuration requise et langues pour PC de Silent Hill Townfall",
+          "description": "Windows 11, stockage, cibles GPU et langues de texte prises en charge."
+        },
+        {
+          "title": "Développeur Silent Hill Townfall et gravure d'écran",
+          "description": "Rôles Screen Burn, No Code History, Konami et Annapurna."
+        }
+      ]
+    },
+    "modules": {
+      "silentHillTownfallRelease": {
+        "title": "Sortie et plateformes de Silent Hill Townfall",
+        "eyebrow": "Libérer",
+        "intro": "Silent Hill Townfall est lancé en tant que jeu d'horreur psychologique solo avec une couverture confirmée en magasin sur console et PC.",
+        "items": [
+          {
+            "label": "Date de sortie",
+            "value": "24 septembre 2026",
+            "detail": "La date de lancement mondial annoncée dans les listes officielles de Silent Hill Townfall."
+          },
+          {
+            "label": "Plateformes",
+            "value": "PlayStation 5, Steam, Epic Games Store",
+            "detail": "Le jeu est confirmé pour PS5 et PC via Steam et Epic Games Store."
+          },
+          {
+            "label": "Mode Joueur",
+            "value": "Un joueur",
+            "detail": "Silent Hill Townfall est construit comme une expérience d'horreur solo centrée sur Simon Ordell."
+          },
+          {
+            "label": "Développeur et éditeurs",
+            "value": "Gravure d'écran, KONAMI, Annapurna Interactive",
+            "detail": "Screen Burn développe le jeu tandis que KONAMI et Annapurna Interactive le publient."
+          }
+        ],
+        "stores": [
+          {
+            "label": "PlayStation Store",
+            "description": "Précommandez la version PS5 et comparez les éditions Standard et Deluxe."
+          },
+          {
+            "label": "Steam",
+            "description": "Suivez la liste des PC, l’état de la liste de souhaits et les mises à jour des pages le jour du lancement."
+          },
+          {
+            "label": "Epic Games Store",
+            "description": "Consultez la vitrine Epic pour l’édition PC et les détails des bonus."
+          }
+        ]
+      },
+      "silentHillTownfallEditions": {
+        "title": "Éditions Silent Hill Townfall et bonus de précommande",
+        "eyebrow": "Éditions",
+        "intro": "Choisissez entre la version de base et le package de lancement étendu selon que vous souhaitez des récompenses cosmétiques, des extras numériques et un accès anticipé.",
+        "items": [
+          {
+            "name": "Édition standard",
+            "price": "$49.99",
+            "includes": [
+              "Accès complet au jeu le jour de la sortie",
+              "Cosmétique de précommande de style CRTV rouillé",
+              "Cosmétique de précommande Beach CRTV Style"
+            ]
+          },
+          {
+            "name": "Édition de luxe",
+            "price": "$59.99",
+            "includes": [
+              "Accès complet au jeu",
+              "Accès anticipé 48 heures",
+              "Demande de bonus",
+              "La tenue alternative de Simon",
+              "Livre d'art interactif",
+              "Bande sonore numérique"
+            ]
+          },
+          {
+            "name": "Offre d'achat physique anticipé",
+            "price": "Dépendant du détaillant",
+            "includes": [
+              "Édition standard physique",
+              "SteelBook limité chez certains détaillants",
+              "Appel du collectionneur de fenêtre de lancement"
+            ]
+          }
+        ]
+      },
+      "silentHillTownfallTrailerGameplayReveal": {
+        "title": "Bande-annonce et gameplay de Silent Hill Townfall",
+        "eyebrow": "Bande-annonce",
+        "intro": "Le déploiement de la bande-annonce officielle présente Simon Ordell, St. Amelia, la télévision de poche CRTV et le ton d'horreur de survie à la première personne de Silent Hill Townfall.",
+        "items": [
+          {
+            "title": "Bande-annonce de la date de sortie de Silent Hill Townfall",
+            "source": "YouTube",
+            "date": "juin 2026",
+            "description": "Confirme la date de sortie du 24 septembre 2026, montre de nouvelles scènes de Sainte-Amélie et diffuse les précommandes dans les magasins officiels.",
+            "href": "https://www.youtube.com/watch?v=owiC_bApFmU",
+            "cta": "Regarder la bande-annonce de la date de sortie"
+          },
+          {
+            "title": "Bande-annonce de Silent Hill Townfall",
+            "source": "Annapurna interactif",
+            "date": "Annonce révélée",
+            "description": "Donne le ton statique, présente le projet et définit le mystère avant l'arrivée de la description complète du gameplay.",
+            "href": "https://www.youtube.com/watch?v=_ccYsjz_EtQ",
+            "cta": "Regardez la bande-annonce"
+          },
+          {
+            "title": "Répartition du gameplay de l’état des lieux de Silent Hill Townfall",
+            "source": "Blog PlayStation",
+            "date": "12 février 2026",
+            "description": "Détaille la perspective à la première personne, la furtivité, la dissimulation, les armes de mêlée, les armes à feu et la CRTV en tant qu'évolution de la radio classique.",
+            "href": "https://blog.playstation.com/2026/02/12/silent-hill-townfall-reveals-first-person-gameplay-in-a-new-trailer/",
+            "cta": "Lire la révélation du gameplay"
+          },
+          {
+            "title": "Détails du lancement de Silent Hill Townfall en septembre",
+            "source": "Blog PlayStation",
+            "date": "2 juin 2026",
+            "description": "Ajoute plus sur Zoe, une nouvelle pression ennemie, des rencontres d'évasion en premier et des fonctionnalités PS5 telles que l'haptique et les déclencheurs adaptatifs.",
+            "href": "https://blog.playstation.com/2026/06/02/silent-hill-townfall-launches-september-24-on-ps5/",
+            "cta": "Lire les détails du lancement"
+          }
+        ]
+      },
+      "silentHillTownfallStorySetting": {
+        "title": "Histoire de Silent Hill Townfall et décor de Sainte-Amélie",
+        "eyebrow": "Histoire",
+        "intro": "Silent Hill Townfall suit Simon Ordell alors qu'il retourne à St. Amelia, une ville insulaire isolée enveloppée de brouillard, de culpabilité, de mémoire et de signaux analogiques instables.",
+        "items": [
+          {
+            "title": "Simon Ordell",
+            "description": "Simon est rappelé à Sainte-Amélie pour arranger les choses, et la ville continue de l'entraîner vers des dommages personnels auxquels il n'a pas échappé."
+          },
+          {
+            "title": "Sainte Amélie",
+            "description": "La ville insulaire semble abandonnée mais jamais vide, avec des rues, des immeubles d'habitation et des espaces riverains chargés d'effroi."
+          },
+          {
+            "title": "Ecosse, 1996",
+            "description": "Le décor d’époque renforce l’identité analogique du jeu grâce au temps humide, à la vieille technologie et à l’atmosphère d’une ville isolée."
+          },
+          {
+            "title": "Mémoire, perte et conséquence",
+            "description": "Silent Hill Townfall crée une pression narrative à travers des souvenirs fracturés, du chagrin et le sentiment que chaque choix aggrave les dégâts."
+          },
+          {
+            "title": "CRTV et statique",
+            "description": "La CRTV transmet à Simon des signaux instables, des fragments d'histoire et des panneaux d'avertissement qui donnent à la ville un sentiment de vie même lorsque rien ne parle."
+          },
+          {
+            "title": "Des énigmes narratives",
+            "description": "Les énigmes sont conçues dans le cadre de la compréhension de Simon de Sainte-Amélie plutôt que dans des casse-têtes séparés et détachés."
+          }
+        ]
+      },
+      "silentHillTownfallGameplayCombatCrtv": {
+        "title": "Silent Hill Townfall Gameplay Combat et CRTV",
+        "eyebrow": "Gameplay",
+        "intro": "Silent Hill Townfall se joue entièrement à la première personne, poussant Simon Ordell à travers une exploration tendue, une pression furtive, des combats directs, des énigmes narratives et la lecture du signal CRTV.",
+        "items": [
+          {
+            "step": 1,
+            "title": "Explorez Sainte-Amélie à la première personne",
+            "description": "La vue à la première personne maintient chaque couloir, porte et rivage à proximité de Simon, ce qui rend la recherche d'indices, la lecture de l'environnement et les rencontres d'horreur immédiates."
+          },
+          {
+            "step": 2,
+            "title": "Utilisez la CRTV comme principal outil de survie",
+            "description": "La CRTV agit comme une nouvelle version de la radio classique Silent Hill, traduisant les signaux analogiques instables en panneaux d'avertissement, en indices d'itinéraire et en fragments d'histoire."
+          },
+          {
+            "step": 3,
+            "title": "Lire les menaces avant de s'engager",
+            "description": "Les changements de signal, les regards furtifs et une mise en scène minutieuse vous aident à évaluer les positions ennemies avant d'entrer dans une pièce qui peut s'effondrer dans la panique."
+          },
+          {
+            "step": 4,
+            "title": "Choisissez des armes de mêlée ou à feu lorsque le combat est nécessaire",
+            "description": "Des armes de mêlée et des armes à feu sont disponibles, mais le combat est conçu comme une réponse risquée à de mauvaises situations plutôt que comme une solution par défaut."
+          },
+          {
+            "step": 5,
+            "title": "Courir, distraire, se cacher ou se battre",
+            "description": "Certaines rencontres récompensent davantage l'évasion que l'agression, la survie dépend donc de la rupture de la ligne de vue, de l'utilisation de l'environnement et du changement rapide de tactique."
+          },
+          {
+            "step": 6,
+            "title": "Résolvez des énigmes qui ont un sens pour l'histoire",
+            "description": "Des énigmes sont tissées dans le retour de Simon à Sainte-Amélie, utilisant les détails environnementaux et le contexte de l'histoire pour révéler ce que la ville cachait."
+          }
+        ]
+      },
+      "silentHillTownfallBeginnerGuide": {
+        "title": "Guide du débutant pour Silent Hill Townfall",
+        "eyebrow": "Guide du débutant",
+        "intro": "Traitez Silent Hill Townfall comme un jeu d'horreur de survie sur l'attention, la retenue et la prise de décision propre. L’habitude la plus sûre est d’observer avant de s’engager.",
+        "items": [
+          {
+            "step": 1,
+            "title": "Relever la CRTV avant d'entrer en danger",
+            "description": "Vérifiez le CRTV autour des intérieurs sombres, des espaces de puzzle et des itinéraires ennemis afin de pouvoir lire les signaux instables avant de passer à l'étape suivante."
+          },
+          {
+            "step": 2,
+            "title": "Jetez un coup d’œil avant de vous déplacer dans des espaces ouverts",
+            "description": "Utilisez les coins, les abris et les lignes de visibilité avec précaution, car il est généralement plus utile de repérer le danger en premier que de réussir le premier coup."
+          },
+          {
+            "step": 3,
+            "title": "Cachez-vous ou esquivez lorsque l'ennemi est trop dangereux",
+            "description": "Si une rencontre commence à prendre une tournure, considérez la fuite comme une condition de victoire et protégez votre route au lieu de forcer un combat désordonné."
+          },
+          {
+            "step": 4,
+            "title": "Combattez uniquement lorsque cela vous donne un net avantage",
+            "description": "Les armes comptent le plus lorsqu'un ennemi bloque la progression, que votre issue de secours est supprimée ou que la salle favorise clairement une réponse décisive rapide."
+          },
+          {
+            "step": 5,
+            "title": "Traitez les énigmes comme faisant partie de l’histoire",
+            "description": "Lisez les notes, les accessoires, les signaux et les détails de la pièce comme des indices connectés pour que la résolution d'énigmes donne l'impression de comprendre Sainte-Amélie au lieu de rechercher des interrupteurs aléatoires."
+          },
+          {
+            "step": 6,
+            "title": "Explorez attentivement car les actions comptent",
+            "description": "Une exploration lente vous aide à capturer des détails facultatifs, à préserver les ressources et à comprendre comment vos actions alimentent les chemins de fin de Silent Hill Townfall."
+          }
+        ]
+      },
+      "silentHillTownfallPCRequirementsLanguages": {
+        "title": "Configuration requise et langues pour PC de Silent Hill Townfall",
+        "eyebrow": "Spécifications du PC",
+        "intro": "Les joueurs PC ont besoin de Windows 11 x64, DirectX 12 et de 75 Go de stockage. Les spécifications minimales ciblent 1080p 30 ips en mode faible, tandis que la configuration recommandée cible 4K 30 ips en mode élevé avec mise à l'échelle.",
+        "items": [
+          {
+            "feature": "OS",
+            "minimum": "Windows 11 x64",
+            "recommended": "Windows 11 x64"
+          },
+          {
+            "feature": "CPU",
+            "minimum": "AMD Ryzen 5 3600 / Intel i7-8700K",
+            "recommended": "AMD Ryzen 7 5700X/Intel i7-9700K"
+          },
+          {
+            "feature": "Mémoire",
+            "minimum": "16 GB RAM",
+            "recommended": "32 GB RAM"
+          },
+          {
+            "feature": "GPU",
+            "minimum": "NVIDIA GeForce RTX 2060 Super / AMD Radeon RX 6600",
+            "recommended": "NVIDIA GeForce RTX 3080 / AMD Radeon RX 7800 XT"
+          },
+          {
+            "feature": "DirectX",
+            "minimum": "DirectX 12",
+            "recommended": "DirectX 12"
+          },
+          {
+            "feature": "Stockage",
+            "minimum": "75 Go, SSD requis",
+            "recommended": "75 Go, NVMe"
+          },
+          {
+            "feature": "Carte son",
+            "minimum": "Périphérique audio compatible Windows",
+            "recommended": "Périphérique audio compatible Windows"
+          },
+          {
+            "feature": "Objectif de performance",
+            "minimum": "Paramètres bas à 1080p 30fps",
+            "recommended": "Paramètres élevés à 4K 30 ips en utilisant le mode DLSS, FSR ou TSR Balanced"
+          },
+          {
+            "feature": "Langue audio",
+            "minimum": "Anglais",
+            "recommended": "Anglais"
+          },
+          {
+            "feature": "Langues de texte",
+            "minimum": "Anglais, français, allemand, italien, japonais, coréen, polonais, portugais, russe, espagnol (Espagne), espagnol (Amérique latine), chinois (simplifié), chinois (traditionnel)",
+            "recommended": "Même"
+          },
+          {
+            "feature": "Connexion à l'Epic Games Store",
+            "minimum": "ID épique",
+            "recommended": "ID épique"
+          }
+        ]
+      },
+      "silentHillTownfallDeveloperScreenBurn": {
+        "title": "Développeur Silent Hill Townfall, sans code et gravure d'écran",
+        "eyebrow": "Promoteur",
+        "intro": "Silent Hill Townfall est développé par Screen Burn, le studio de Glasgow anciennement connu sous le nom de No Code. Ses travaux antérieurs sur Stories Untold et Observation contribuent à expliquer les interfaces analogiques du projet, son atmosphère dense et sa tension narrative.",
+        "items": [
+          {
+            "question": "Qui développe Silent Hill Townfall ?",
+            "answer": "Silent Hill Townfall est développé par Screen Burn, un studio de développement de jeux indépendant basé à Glasgow, en Écosse."
+          },
+          {
+            "question": "Le studio Silent Hill Townfall s’appelait-il auparavant No Code ?",
+            "answer": "Oui. Screen Burn a été fondée en 2015 sous le nom original No Code avant de devenir plus tard Screen Burn Interactive."
+          },
+          {
+            "question": "Quels jeux le studio Silent Hill Townfall a-t-il réalisé avant ce projet ?",
+            "answer": "Le studio est connu pour Stories Untold et Observation, qui ont tous deux contribué à définir son style de narration atmosphérique."
+          },
+          {
+            "question": "Quel est le style créatif derrière Silent Hill Townfall ?",
+            "answer": "L'équipe se concentre sur l'atmosphère, l'histoire, la présentation soignée, la conception sonore détaillée et les idées d'interface rétro qui correspondent bien à l'horreur psychologique."
+          },
+          {
+            "question": "Quel est le rôle de KONAMI dans Silent Hill Townfall ?",
+            "answer": "KONAMI possède la franchise Silent Hill, co-édite Silent Hill Townfall et a annoncé la date de sortie et le déploiement de la plateforme."
+          },
+          {
+            "question": "Quel est le rôle d’Annapurna Interactive dans Silent Hill Townfall ?",
+            "answer": "Annapurna Interactive co-édite Silent Hill Townfall et soutient sa présence en magasin sur PlayStation, Steam et Epic Games Store."
+          },
+          {
+            "question": "Quel est le lien entre le travail passé de No Code et Silent Hill Townfall ?",
+            "answer": "L'équipe travaille depuis longtemps avec des interfaces rétro, une présentation de style VHS et une conception basée sur une histoire, qui correspondent à la mécanique CRTV et à la tension à la première personne de Townfall."
+          }
+        ]
+      }
+    }
+  },
+  "pages": {
+    "date": {
+      "title": "Date de sortie de Silent Hill Townfall",
+      "description": "Suivez la date de sortie officielle, la fenêtre de lancement et le calendrier du magasin pour Silent Hill Townfall.",
+      "metaTitle": "Date de sortie de Silent Hill Townfall – Calendrier et statut du lancement",
+      "metaDescription": "Suivez la date de sortie de Silent Hill Townfall, l’état du lancement, le calendrier de préchargement et les détails du déploiement régional sur les pages de la boutique officielle.",
+      "categoryLabel": "RELEASE",
+      "whatIs": "Qu'est-ce que la section Date ?",
+      "whatIsDescription": "La section Date conserve tous les articles sur le calendrier de sortie au même endroit, y compris la date de lancement confirmée du 24 septembre 2026, les questions sur l'état du lancement et la couverture temporelle spécifique à la région liée aux annonces officielles.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Confirmez rapidement le calendrier de lancement",
+        "step1Description": "Utilisez cette section lorsque vous avez besoin d'une réponse directe pour savoir si Silent Hill Townfall est déjà sorti, quand il sera lancé et quelle date publique est actuelle.",
+        "step2Title": "Comparez les formulations régionales",
+        "step2Description": "Certains articles se concentrent sur le calendrier britannique ou sur une couverture plus large pour 2026, ce qui est utile lorsque les pages des magasins ou les rapports des médias formulent différemment la même fenêtre de lancement.",
+        "step3Title": "Séparer les faits des spéculations plus anciennes",
+        "step3Description": "La couverture de la date de sortie change rapidement, ces pages vous aident donc à distinguer le calendrier confirmé des articles antérieurs fondés sur des rumeurs."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles sur les dates"
+    },
+    "platforms": {
+      "title": "Plateformes de Silent Hill Townfall",
+      "description": "Découvrez où le lancement de Silent Hill Townfall est confirmé et en quoi chaque page de magasin diffère.",
+      "metaTitle": "Plateformes Silent Hill Townfall – PS5, PC, Steam et Epic",
+      "metaDescription": "Vérifiez les plates-formes confirmées de Silent Hill Townfall, les liens vers les vitrines, la couverture PC et les derniers détails spécifiques à la plate-forme pour PS5, Steam et Epic Games Store.",
+      "categoryLabel": "PLATFORMS",
+      "whatIs": "Qu'est-ce que la section Plateformes ?",
+      "whatIsDescription": "La section Plateformes couvre toutes les questions de vitrine et de matériel autour de Silent Hill Townfall, des listes PS5 et PC à Steam, Epic Games Store et les spéculations non confirmées sur les plates-formes.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Trouver les magasins confirmés",
+        "step1Description": "Utilisez ces pages pour vérifier si une plateforme dispose d'une liste officielle au lieu de vous fier aux rumeurs republiées ou aux spéculations sur les listes de souhaits.",
+        "step2Title": "Comparez les options PC",
+        "step2Description": "Steam, Epic Games Store et des articles plus larges sur PC vous aident à savoir quelle vitrine contient des pages actives, des fonctionnalités et des options d'achat le jour du lancement.",
+        "step3Title": "Évitez les hypothèses non fondées",
+        "step3Description": "La couverture de la plate-forme permet de séparer ce que KONAMI et Annapurna ont confirmé des suppositions de la communauté concernant les ports Xbox, Switch 2 ou ultérieurs."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles de la plateforme"
+    },
+    "trailer": {
+      "title": "Bandes-annonces de la chute de Silent Hill",
+      "description": "Regardez et comparez les bandes-annonces de révélation, de teaser, de gameplay et de date de sortie de Silent Hill Townfall.",
+      "metaTitle": "Guide de la bande-annonce de Silent Hill Townfall – Révélation, gameplay et teaser",
+      "metaDescription": "Parcourez la couverture de la bande-annonce de Silent Hill Townfall, y compris la bande-annonce de révélation, les séquences de gameplay, les clips State of Play, les rythmes teaser et les détails vidéo de la date de sortie.",
+      "categoryLabel": "TRAILER",
+      "whatIs": "Qu'est-ce que la section Bande-annonce ?",
+      "whatIsDescription": "La section Bande-annonce rassemble tous les articles construits autour des vidéos officielles et des rythmes de présentation, y compris le teaser, la bande-annonce de révélation, la bande-annonce de gameplay, la bande-annonce de la date de sortie et la couverture de l'état des lieux.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Revoir chaque vidéo officielle",
+        "step1Description": "Ces pages vous aident à accéder directement à la bande-annonce ou à la présentation qui a introduit une mécanique, une scène ou une mise à jour spécifique.",
+        "step2Title": "Suivez ce qui a changé entre les révélations",
+        "step2Description": "La comparaison des bandes-annonces montre comment Silent Hill Townfall est passé d'un teaser abstrait à des détails concrets sur le gameplay, les combats et les personnages.",
+        "step3Title": "Réutiliser les images comme preuve",
+        "step3Description": "Les pages de bande-annonce sont des points de référence utiles lorsque vous souhaitez citer exactement l'endroit où un indice visuel, un détail de décor ou un système de jeu est apparu pour la première fois."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles de la bande-annonce"
+    },
+    "guide": {
+      "title": "Guides de la chute de Silent Hill",
+      "description": "Parcourez les guides de démarrage, les articles de présentation et les explications pratiques de Silent Hill Townfall.",
+      "metaTitle": "Guide de Silent Hill Townfall – Conseils pour débutants et aperçus de base",
+      "metaDescription": "Lisez la couverture du guide Silent Hill Townfall pour les débutants, la durée du jeu, la planification des trophées, les explications générales et les articles de référence pratiques avant le lancement.",
+      "categoryLabel": "GUIDE",
+      "whatIs": "Qu'est-ce que la section Guide ?",
+      "whatIsDescription": "La section Guide rassemble des informations générales et générales sur Silent Hill Townfall, y compris des conseils pour les débutants, la planification des trophées, les attentes en matière de durée du jeu et des explications générales sur le projet.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Commencez par les bases",
+        "step1Description": "Les pages de guide sont le moyen le plus rapide de créer un contexte si vous êtes nouveau dans le projet et que vous souhaitez un aperçu clair avant de lire des articles sur des sujets plus approfondis.",
+        "step2Title": "Préparez-vous pour le jeu le jour du lancement",
+        "step2Description": "La couverture du niveau débutant, de la durée et des trophées vous donne des attentes pratiques en matière de rythme, d'objectifs d'achèvement et d'exigence de l'expérience complète.",
+        "step3Title": "Conserver un hub de référence",
+        "step3Description": "Cette catégorie fonctionne comme la couche à usage général du wiki, vous pouvez donc y revenir lorsque vous avez besoin de réponses générales au lieu d'un mécanisme précis ou d'un détail de l'histoire."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles du guide"
+    },
+    "combat": {
+      "title": "Combat de chute de Silent Hill",
+      "description": "Suivez le gameplay à la première personne, les armes, la furtivité et la couverture de survie liée à la CRTV pour Silent Hill Townfall.",
+      "metaTitle": "Silent Hill Townfall Combat – Gameplay, armes et utilisation du CRTV",
+      "metaDescription": "Explorez la couverture des combats de Silent Hill Townfall, y compris le gameplay à la première personne, les armes à feu, la pression furtive et la manière dont la CRTV soutient la survie.",
+      "categoryLabel": "COMBAT",
+      "whatIs": "Qu'est-ce que la section Combat ?",
+      "whatIsDescription": "La section Combat couvre le côté action de Silent Hill Townfall : pression à la première personne, survie évasive, utilisation de mêlée et d'armes à feu, conscience de l'ennemi et le CRTV comme outil pratique lors de rencontres tendues.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Comprendre la boucle de survie",
+        "step1Description": "La couverture des combats explique comment l'exploration, la détection des menaces, la dissimulation et la confrontation directe s'articulent au lieu de traiter les batailles comme des éléments isolés.",
+        "step2Title": "Suivre les attentes en matière d'armes",
+        "step2Description": "Les pages sur les armes et les armes à feu vous aident à comparer les images confirmées avec des hypothèses plus larges de survie et d'horreur concernant la rareté, le rythme et le risque.",
+        "step3Title": "Suivez de près l’utilisation de la CRTV",
+        "step3Description": "Étant donné que le CRTV affecte la navigation, les signaux d'avertissement et la lecture des énigmes, cette section est également celle où l'interprétation de base du gameplay a tendance à s'affiner le plus rapidement."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles de combat"
+    },
+    "story": {
+      "title": "Histoire de la chute de Silent Hill",
+      "description": "Découvrez Simon Ordell, St. Amelia, les monstres et la configuration narrative plus large derrière Silent Hill Townfall.",
+      "metaTitle": "Histoire de Silent Hill Townfall – Simon, Sainte-Amélie et indices chronologiques",
+      "metaDescription": "Parcourez la couverture de l'histoire de Silent Hill Townfall axée sur Simon Ordell, St. Amelia, les monstres, les indices et la chronologie entourant l'intrigue d'horreur psychologique du jeu.",
+      "categoryLabel": "STORY",
+      "whatIs": "Qu'est-ce que la section Histoire ?",
+      "whatIsDescription": "La section Histoire rassemble des articles axés sur les personnages, le décor et les traditions de Silent Hill Townfall, notamment Simon Ordell, St. Amelia, la chronologie, l'interprétation des monstres et des indices d'histoire plus larges.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Cartographier la configuration narrative",
+        "step1Description": "Ces pages vous aident à comprendre qui est Simon, pourquoi il revient et comment St. Amelia façonne la pression psychologique du jeu.",
+        "step2Title": "Suivre les symboles récurrents",
+        "step2Description": "La couverture de l'histoire est l'endroit où les noms des personnages, les motifs de monstres, les signaux de type radio et l'histoire de la ville peuvent être comparés à travers les bandes-annonces et les descriptions officielles.",
+        "step3Title": "Gardez les spoilers dans leur contexte",
+        "step3Description": "Au fur et à mesure que de plus amples informations apparaissent, cette section vous offre un endroit unique pour organiser les détails confirmés de l'intrigue sans les mélanger dans la couverture de la plate-forme ou du gameplay."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles d'histoire"
+    },
+    "editions": {
+      "title": "Éditions Silent Hill Townfall",
+      "description": "Comparez les offres de précommande, le contenu Deluxe, les détails du SteelBook et les choix d'achat au niveau de l'édition.",
+      "metaTitle": "Éditions Silent Hill Townfall – Deluxe, précommande et SteelBook",
+      "metaDescription": "Comparez les éditions Silent Hill Townfall, y compris les bonus de l'édition Deluxe, les récompenses de précommande, les offres spéciales et la disponibilité du SteelBook dans les magasins.",
+      "categoryLabel": "EDITIONS",
+      "whatIs": "Qu'est-ce que la rubrique Éditions ?",
+      "whatIsDescription": "La section Éditions se concentre sur les options d'achat pour Silent Hill Townfall, y compris les comparaisons Standard et Deluxe, les bonus de précommande, les extras des détaillants et les emballages de collection tels que les offres SteelBook.",
+      "why": "Pourquoi lire cette rubrique ?",
+      "whySteps": {
+        "step1Title": "Comparez les niveaux d'achat",
+        "step1Description": "Les pages de l'édition vous aident à voir si le package Deluxe, l'accès anticipé, la bande-son ou les produits cosmétiques bonus justifient le prix plus élevé de votre plateforme.",
+        "step2Title": "Suivre les extras du détaillant",
+        "step2Description": "La couverture du SteelBook et des éditions spéciales est utile lorsque la disponibilité change par région ou par magasin partenaire au lieu d'être universelle.",
+        "step3Title": "Évitez les dépenses en double",
+        "step3Description": "Cette section regroupe les informations sur les bonus et les précommandes afin que vous puissiez décider une seule fois, au lieu de rassembler des notes de magasin éparses."
+      },
+      "featured": "En vedette et essentiel",
+      "all": "Tous les articles de l'édition"
+    }
   }
 }
