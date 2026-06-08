@@ -1,0 +1,182 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Silent Hill Townfall System Requirements: PC Specs & Setup Guide",
+  description: "Check the official Silent Hill Townfall system requirements. Minimum and recommended PC specs, storage needs, and performance targets for the 2026 launch.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1a1a1a/ed1c24?text=System+Requirements+Guide",
+  date: "2026-06-08",
+  author: "silent hill townfall Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Silent Hill Townfall system requirements** demand Windows 11 x64 and at least 16 GB of RAM for basic play.
+- **Recommended GPU** targets include the NVIDIA RTX 3080 or AMD RX 7800 XT for 4K performance.
+- **Storage space** of 75 GB is required, with an SSD being mandatory for the foggy environments of St. Amelia.
+- **The launch date** is officially set for September 24, 2026, on PS5, Steam, and the Epic Games Store.
+- **Upscaling technology** like DLSS, FSR, or TSR is highly recommended to maintain stable frame rates.
+</Callout>
+
+<Section icon={Map} title="Official Silent Hill Townfall System Requirements">
+
+Silent Hill Townfall represents a significant technical leap for the franchise, utilizing modern rendering techniques to simulate the dense, oppressive fog of Scotland. Developed by Screen Burn and published by Konami, this first-person psychological horror experience requires modern hardware to maintain atmospheric immersion. Players must ensure their operating system is updated to Windows 11 to support the latest DirectX 12 features utilized by the game engine.
+
+**Video Highlights:**
+- Confirms the September 24, 2026 release date for all platforms.
+- Showcases the high-fidelity fog and lighting effects in St. Amelia.
+- Previews the first-person perspective and CRTV interface mechanics.
+- Highlights the eerie, isolated atmosphere of 1996 Scotland.
+
+<YouTubeEmbed videoId="owiC_bApFmU" title="SILENT HILL: Townfall Release Date Trailer" />
+
+| Feature | Minimum Requirements | Recommended Requirements |
+|---------|----------------------|--------------------------|
+| OS | Windows 11 x64 | Windows 11 x64 |
+| CPU | AMD Ryzen 5 3600 / Intel i7-8700K | AMD Ryzen 7 5700X / Intel i7-9700K |
+| RAM | 16 GB RAM | 32 GB RAM |
+| GPU | NVIDIA RTX 2060 Super / RX 6600 | NVIDIA RTX 3080 / RX 7800 XT |
+| DirectX | Version 12 | Version 12 |
+| Storage | 75 GB (SSD Required) | 75 GB (NVMe Recommended) |
+
+<Callout type="warning" title="Hardware Alert">
+The game does not officially support Windows 10. Ensure your PC is upgraded to Windows 11 to avoid compatibility issues with the game's security and rendering pipeline.
+</Callout>
+
+<CardGrid cols={2}>
+  <Card title="Minimum Tier">
+    Designed for **1080p at 30fps** on Low settings. This is suitable for players who prioritize the story over visual fidelity.
+  </Card>
+  <Card title="Recommended Tier">
+    Targets **4K at 30fps** or **1440p at 60fps** using high-quality upscaling modes like DLSS or FSR Balanced.
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Shield} title="Storage and Performance Optimization">
+
+Beyond the basic CPU and GPU needs, Silent Hill Townfall relies heavily on data streaming speeds. The island town of St. Amelia features seamless transitions between indoor and outdoor environments, which are heavily dependent on your drive speed. Traditional Hard Disk Drives (HDDs) will likely cause significant stuttering or "pop-in" of the game's signature fog and textures.
+
+| Performance Target | Resolution | Preset | Tech Support |
+|--------------------|------------|--------|--------------|
+| Entry Level | 1080p | Low | Native / FSR Performance |
+| Balanced | 1440p | Medium/High | DLSS / FSR Quality |
+| Ultra Horror | 4K | High | DLSS / FSR Balanced |
+
+<Callout type="info" title="SSD Mandatory">
+A standard SATA SSD is the bare minimum. For the best experience, an NVMe M.2 drive is recommended to handle the high-bitrate audio and environmental data.
+</Callout>
+
+To ensure the most stable frame rates, players should look into specific hardware configurations. The game utilizes advanced shader pre-compilation, which may take several minutes during the first launch. Do not skip this process, as it prevents mid-game stutters during intense combat or cinematic sequences.
+
+<CardGrid cols={3}>
+  <Card title="VRAM Usage">
+    Requires at least **8 GB of VRAM** for stable 1080p textures. 12 GB+ is ideal for 4K.
+  </Card>
+  <Card title="Audio Device">
+    A Windows-compatible audio device is required; 3D spatial audio headsets are recommended.
+  </Card>
+  <Card title="Input Support">
+    Full support for DualSense features, including haptic feedback and adaptive triggers on PC.
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Sparkles} title="Step-by-Step Setup Guide for PC">
+
+Preparing your PC for Silent Hill Townfall involves more than just meeting the hardware list. Because the game utilizes a unique CRTV mechanic—a portable television that tunes into unstable analog signals—visual clarity and driver stability are paramount. Follow these steps to ensure your system is ready for the September launch.
+
+<Steps>
+  <Step num="1" title="Update Graphics Drivers">
+    Download the latest Game Ready drivers from NVIDIA or Adrenalin software from AMD. Manufacturers often release specific patches for Silent Hill titles to optimize fog rendering.
+  </Step>
+  <Step num="2" title="Verify Storage Integrity">
+    Ensure you have at least 85 GB of free space (75 GB for the game plus 10 GB for temporary shader cache). Use an NVMe drive for the fastest loading times.
+  </Step>
+  <Step num="3" title="Configure Windows 11 Settings">
+    Enable "Game Mode" in Windows settings and ensure "Hardware-Accelerated GPU Scheduling" is turned on to maximize the efficiency of your RTX or RX card.
+  </Step>
+  <Step num="4" title="Calibrate HDR and Brightness">
+    Townfall uses deep blacks and grey fog. Proper calibration of your monitor's brightness is essential to see the subtle clues transmitted through the CRTV pocket television.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Pro Setup Tip">
+If you are playing on a laptop, ensure you are connected to a power source and set the power plan to "Best Performance" to prevent the CPU from throttling during heavy fog scenes.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Platforms and Language Support">
+
+Silent Hill Townfall is a global release, co-published by Konami and Annapurna Interactive. While the PC version is available on both Steam and the Epic Games Store, the requirements remain identical across both storefronts. Note that the Epic Games Store version may require an Epic ID login for certain cloud save features.
+
+| Platform | Digital Store | Availability |
+|----------|---------------|--------------|
+| PlayStation 5 | PS Store | Sep 24, 2026 |
+| PC (Windows) | Steam | Sep 24, 2026 |
+| PC (Windows) | Epic Games | Sep 24, 2026 |
+
+The game features localized text support for a wide range of regions, ensuring that the narrative puzzles and environmental clues are accessible to a global audience.
+
+| Category | Supported Languages |
+|----------|---------------------|
+| Full Audio | English |
+| Text/UI | English, Japanese, French, German, Italian, Spanish, Korean |
+| Subtitles | Chinese (Simplified/Traditional), Polish, Russian, Portuguese |
+
+<Callout type="success" title="Pre-order Bonus">
+Pre-ordering any edition grants access to the "CRTV Style: Rusted" and "Beach Edition" cosmetics, which change the aesthetic of your primary survival tool.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Hardware Readiness FAQ">
+
+Before you head into the fog of St. Amelia, use this checklist to confirm your system's readiness. Reaching the recommended specs will ensure that the psychological horror is delivered exactly as the developers at Screen Burn intended, with no technical distractions.
+
+<Checklist
+  id="system-check"
+  title="PC Readiness Checklist:"
+  items={[
+    "OS updated to Windows 11 x64",
+    "75 GB available on an SSD or NVMe drive",
+    "DirectX 12 compatible GPU with latest drivers",
+    "Minimum 16 GB RAM installed (32 GB preferred)",
+    "High-quality headphones for spatial audio cues",
+    "Upscaling (DLSS/FSR) enabled for 4K targets"
+  ]}
+/>
+
+<Callout type="tip" title="Final Advice">
+If your hardware is slightly below the minimum, focus on lowering the "Volumetric Fog" and "Shadow Quality" settings first, as these are the most resource-intensive options in Silent Hill Townfall.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Can I run Silent Hill Townfall on Windows 10?",
+    answer: "The official Silent Hill Townfall system requirements specify Windows 11 x64. While some users might attempt to run it on older versions, it is not officially supported and may result in crashes."
+  },
+  {
+    question: "Is an SSD absolutely required for the game?",
+    answer: "Yes, an SSD is listed as a requirement. An HDD will cause significant performance issues, including long load times and stuttering while exploring St. Amelia."
+  },
+  {
+    question: "Does the game support Ray Tracing?",
+    answer: "While not listed in the base requirements, the recommended GPUs (RTX 3080) suggest that high-end lighting features like Ray Tracing or advanced global illumination are utilized."
+  },
+  {
+    question: "What is the download size for Silent Hill Townfall?",
+    answer: "The game requires 75 GB of storage space. We recommend having at least 85 GB free to accommodate the initial installation and shader caching."
+  }
+]} />
+
+</Section>
