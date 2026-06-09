@@ -1,0 +1,125 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Silent Hill Townfall Soundtrack: Atmospheric Audio Guide",
+  description: "Explore the audio landscape of Silent Hill Townfall, featuring sound design, CRTV signal mechanics, and the psychological impact of its 1996 Scottish setting.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/475569/fff?text=Townfall+Soundtrack",
+  date: "2026-06-09",
+  author: "silent hill townfall Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- The **Silent Hill Townfall soundtrack** emphasizes psychological immersion through ambient, static-heavy soundscapes.
+- **CRTV mechanics** integrate audio cues directly into gameplay, acting as a survival tool for threat detection.
+- Sound design focuses on the **1996 Scottish isolation**, using environmental audio to heighten tension.
+- **Dynamic audio feedback** shifts based on player choices and the intensity of the Otherworld encounters.
+</Callout>
+
+<Section icon={Target} title="The Sonic Identity of St. Amelia">
+
+The audio experience in Silent Hill: Townfall serves as the backbone of its psychological horror. Unlike traditional scores, the game prioritizes a "Screen Burn" aesthetic—a mixture of decaying analog signals, low-frequency hums, and the biting wind of a 1996 Scottish coastal town.
+
+**Audio Design Pillars:**
+| Element | Description | Impact |
+| :--- | :--- | :--- |
+| **Ambient Static** | Constant white noise from the CRTV | Unsettling, constant presence |
+| **Scottish Winds** | Howling coastal wind effects | Heightens isolation |
+| **Mechanical Clatter** | Distant, rhythmic metallic sounds | Signals approaching threats |
+| **Narrative Dissonance** | Distorted voice fragments | Unreliable reality |
+
+<Callout type="tip" title="Pro Tip">
+Pay close attention to the sound of the CRTV signal. When it shifts from static to a rhythmic pulse, it almost always indicates a nearby environmental clue or an approaching entity.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="CRTV: The Evolution of the Classic Radio">
+
+In previous entries, the pocket radio was the player's primary warning. In Townfall, the CRTV replaces this, offering a more complex, visual-audio hybrid experience. The soundtrack of your survival is dictated by how you tune this device.
+
+<Steps>
+  <Step num="1" title="Signal Tuning">
+    Use the CRTV to scan frequencies. The sound changes from chaotic static to clear, albeit distorted, audio streams when you are close to a story fragment.
+  </Step>
+  <Step num="2" title="Threat Detection">
+    When enemies are nearby, the CRTV audio output becomes aggressive. The soundtrack shifts from atmospheric to jagged, high-frequency interference.
+  </Step>
+  <Step num="3" title="Environmental Feedback">
+    Certain locations in St. Amelia trigger unique audio loops. Use the CRTV to isolate these sounds, which often contain hints for narrative-driven puzzles.
+  </Step>
+</Steps>
+
+<CardGrid cols={2}>
+  <Card title="Classic Radio vs. CRTV">
+    - **Classic Radio**: High-pitched screeching
+    - **CRTV**: Analog static, hums, and pulses
+    - **Function**: Purely warning vs. Story/Clue integration
+  </Card>
+  <Card title="Audio Immersion">
+    - **Dynamic Mixing**: Sounds react to your location
+    - **Spatial Audio**: Use 3D audio to pinpoint threats
+    - **Haptic Sync**: PS5 DualSense mimics signal vibrations
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Shield} title="Survival Tactics and Audio Cues">
+
+Combat and stealth in St. Amelia are not just about what you see, but what you hear. The soundtrack of a chase sequence is reactive; the more you are hunted, the more the music layers in percussive, anxiety-inducing elements.
+
+| Situation | Audio Characteristic | Recommended Action |
+| :--- | :--- | :--- |
+| **Stealth Mode** | Quiet, muffled footsteps, distant wind | Move slowly, observe |
+| **Detection Alert** | Sharp, sudden static spike | Find cover immediately |
+| **Combat Encounter** | Intense, rhythmic low-end pulses | Assess, then fight or flee |
+| **Puzzle Solving** | Eerie, melodic, repetitive tones | Focus on the CRTV signal |
+
+<Callout type="warning" title="Audio Warning">
+Do not rely solely on the music. The most dangerous threats in St. Amelia often move in silence, leaving only the distant sound of shifting fog or debris as a warning.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Atmospheric Requirements">
+
+To fully appreciate the sound design and the Silent Hill Townfall soundtrack, ensure your audio setup is optimized. The game features a wide dynamic range, meaning quiet whispers and loud static bursts can vary significantly in volume.
+
+<Checklist
+  id="audio-setup-checklist"
+  title="Optimized Audio Checklist:"
+  items={[
+    "Use high-quality headphones for spatial audio",
+    "Disable 'Night Mode' on your soundbar/receiver",
+    "Ensure 3D Audio is enabled in PS5 settings",
+    "Calibrate volume levels to hear subtle atmospheric cues"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Does the Silent Hill Townfall soundtrack feature iconic tracks from the series?",
+    answer: "Townfall focuses on its own original, atmospheric soundscape designed by Screen Burn, emphasizing the 1996 setting and the unique CRTV-based horror."
+  },
+  {
+    question: "Can I adjust the music volume independently of the sound effects?",
+    answer: "Yes, the audio settings menu allows you to fine-tune music, sound effects, and voice-over volumes to suit your preference."
+  },
+  {
+    question: "Is the CRTV audio essential for solving puzzles?",
+    answer: "Absolutely. Many narrative-driven puzzles rely on audio cues and frequencies captured through the CRTV to unlock new areas or story fragments."
+  }
+]} />
+
+</Section>

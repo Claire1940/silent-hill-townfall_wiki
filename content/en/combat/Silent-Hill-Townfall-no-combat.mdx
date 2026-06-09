@@ -1,0 +1,132 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Silent Hill Townfall no combat: Stealth & Evasion Guide",
+  description: "Master Silent Hill Townfall without relying on direct combat. Learn how to use the CRTV, stealth mechanics, and environmental awareness to survive.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/2a2a2a/ff4444?text=Silent+Hill+Townfall+Stealth+Guide",
+  date: "2026-06-09",
+  author: "silent hill townfall Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Silent Hill Townfall no combat** strategies rely on **stealth and environmental awareness** to bypass threats.
+- The **CRTV pocket television** is your primary tool for **detecting enemies** without direct confrontation.
+- **Evasion is often safer** than engaging in combat, as resources are limited and encounters are high-risk.
+- **Careful exploration** and observing movement patterns allow you to navigate St. Amelia safely.
+</Callout>
+
+<Section icon={Map} title="Understanding Silent Hill Townfall No Combat Gameplay">
+
+While *Silent Hill: Townfall* provides options for self-defense, the core design emphasizes psychological dread and situational survival. Many segments are best navigated using **stealth and evasion** rather than engaging in direct combat. Understanding the game's mechanics allows you to minimize risk and conserve resources.
+
+**Video Highlights:**
+- Demonstrates the use of the CRTV for threat detection.
+- Showcases effective hiding spots in St. Amelia.
+- Explains the risk-reward balance of engaging with enemies.
+
+<YouTubeEmbed videoId="owiC_bApFmU" title="Silent Hill: Townfall Release Date Trailer" />
+
+Players who prioritize a "no combat" or "low combat" playstyle should focus on spatial awareness. The game rewards those who listen to environmental cues and use the CRTV to map out enemy patrol routes before moving into open areas.
+
+<Callout type="tip" title="Pro Tip">
+Always prioritize the **peek mechanic** before turning corners. If your CRTV indicates high static activity, it is a clear sign that a threat is nearby, and you should consider an alternate route or hiding.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Survival Toolset: Mastering the CRTV">
+
+The CRTV acts as your most essential survival tool in *Silent Hill: Townfall*. Unlike traditional radar, it requires manual tuning to interpret analog signals, which provide critical information about your surroundings.
+
+| Feature | Function | Survival Benefit |
+| :--- | :--- | :--- |
+| **Signal Tuning** | Detects nearby anomalies | Identifies hidden threats early |
+| **Static Intensity** | Indicates proximity to danger | Warns you to stop and hide |
+| **Visual Clues** | Highlights environmental patterns | Guides you through complex puzzles |
+| **Audio Feedback** | Distinguishes enemy types | Helps you plan your escape route |
+
+<Callout type="success" title="Mastering Signals">
+Learning to read the CRTV effectively is the difference between being hunted and staying hidden. Practice tuning to different frequencies in safe zones to recognize the "threat" signals versus "story" signals.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Stealth and Evasion Tactics">
+
+When you cannot avoid an enemy, your goal shifts to breaking their line of sight. The game’s AI is designed to track you based on sound, light, and movement. 
+
+<Steps>
+  <Step num="1" title="Observe Patrols">
+    Stay in the shadows and watch the enemy's pathing. Most creatures in St. Amelia follow a rhythmic cycle.
+  </Step>
+  <Step num="2" title="Utilize Distractions">
+    Throw environmental objects to shift an enemy's attention away from your intended path.
+  </Step>
+  <Step num="3" title="Maintain Distance">
+    If spotted, prioritize breaking the line of sight immediately. Running into a new room and closing a door is often more effective than turning to fight.
+  </Step>
+  <Step num="4" title="Crouch and Wait">
+    When hiding, remain still. The game tracks your movement, and staying crouched behind cover reduces your visibility significantly.
+  </Step>
+</Steps>
+
+| Tactic | Risk Level | Best Used When |
+| :--- | :--- | :--- |
+| **Crouching** | Low | Moving through narrow corridors |
+| **Distraction** | Medium | Creating a path through a blocked area |
+| **Running** | High | Escaping a direct pursuit |
+| **Hiding** | Low | Waiting for a patrol to pass |
+
+</Section>
+
+<Section icon={Trophy} title="Strategic Checklist for Survival">
+
+To successfully minimize combat, you must be disciplined with your exploration. Follow this checklist to ensure you are prepared for the challenges of St. Amelia.
+
+<Checklist
+  id="stealth-survival-goals"
+  title="Stealth Progression Goals:"
+  items={[
+    "Identify all potential hiding spots in each zone",
+    "Map out patrol routes before entering a new area",
+    "Conserve health items by avoiding unnecessary damage",
+    "Analyze environmental puzzles to find non-combat shortcuts"
+  ]}
+/>
+
+<Callout type="warning" title="Combat Caution">
+Even if you are committed to a "no combat" run, keep a melee weapon equipped. It should be used exclusively as a last resort to stun an enemy, creating a window to escape, rather than attempting to kill them.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Is it possible to complete Silent Hill: Townfall without any combat?",
+    answer: "While the game is designed for stealth and evasion, certain mandatory encounters may require you to use weapons to stun enemies or solve environmental puzzles to progress."
+  },
+  {
+    question: "How does the CRTV help in avoiding enemies?",
+    answer: "The CRTV acts as a diagnostic tool that detects the presence and proximity of hostile entities, allowing you to plan your route to avoid them entirely."
+  },
+  {
+    question: "Should I prioritize stealth over exploration?",
+    answer: "They are linked. Slow, careful exploration is necessary to identify threats, but rushing through areas is the fastest way to get spotted."
+  },
+  {
+    question: "Does the difficulty affect enemy detection?",
+    answer: "Yes, higher difficulty settings increase the sensitivity of enemy AI, making stealth and the use of the CRTV even more critical for survival."
+  }
+]} />
+
+</Section>
