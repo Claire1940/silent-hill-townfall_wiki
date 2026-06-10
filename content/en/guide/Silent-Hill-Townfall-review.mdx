@@ -1,0 +1,142 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Silent Hill Townfall Review: A Deep Dive into the 2026 Horror Experience",
+  description: "Our professional review of Silent Hill Townfall covers the eerie St. Amelia setting, innovative CRTV mechanics, and the chilling psychological narrative.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Silent+Hill+Townfall+Review",
+  date: "2026-06-10",
+  author: "silent hill townfall Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Silent Hill Townfall review** highlights a return to psychological horror roots in a 1996 Scottish setting.
+- The **CRTV pocket television** serves as a vital tool for detecting threats and uncovering narrative fragments.
+- **Strategic survival** is emphasized, requiring players to choose between stealth, evasion, and tense combat encounters.
+- **Player choices** throughout the campaign directly influence the multiple available endings in the game.
+- **St. Amelia** offers a claustrophobic, fog-drenched island environment that defines the game's atmosphere.
+</Callout>
+
+<Section icon={Map} title="Atmosphere and Setting">
+
+Silent Hill Townfall masterfully captures the essence of isolated psychological horror. Set in 1996 within the fictional Scottish island town of St. Amelia, the game trades traditional urban decay for a cold, maritime-inspired dread. The constant presence of thick, suffocating fog and the decaying infrastructure of the town create a palpable sense of unease.
+
+<CardGrid cols={3}>
+  <Card title="1996 Scotland">
+    - **Authentic period aesthetic**
+    - Isolated, rugged coastal geography
+    - Heavy fog-based environmental storytelling
+  </Card>
+  <Card title="St. Amelia">
+    - **Dense, claustrophobic layout**
+    - Unsettling, abandoned community spaces
+    - Layered, environmental lore
+  </Card>
+  <Card title="Psychological Tone">
+    - **Focus on loss and consequence**
+    - Introspective narrative structure
+    - Reality-bending visual feedback
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Atmospheric Exploration">
+Always pay attention to the audio design, as the shifting sounds of the fog are often the first indicator of approaching threats or hidden story clues.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Gameplay Mechanics and the CRTV">
+
+The core of the Silent Hill Townfall experience revolves around the CRTV—a portable pocket television that acts as a modern evolution of the classic franchise radio. Instead of purely auditory warnings, the CRTV provides visual feedback through static and signal interference, allowing players to peek around corners and decipher the town's history.
+
+| Feature | Functionality | Survival Benefit |
+| :--- | :--- | :--- |
+| **CRTV Static** | Detects nearby hostile entities | Early warning system |
+| **Signal Tuning** | Unlocks narrative audio/visuals | Deepens story immersion |
+| **Peek Mechanic** | Allows safe corner observation | Reduces ambush risks |
+| **Haptic Feedback** | DualSense trigger resistance | Enhances tactile tension |
+
+**Video Highlights:**
+- Detailed look at the first-person control scheme
+- Demonstration of CRTV signal tuning puzzles
+- Combat encounters showcasing evasion vs. direct confrontation
+
+<YouTubeEmbed videoId="owiC_bApFmU" title="Silent Hill Townfall Gameplay Reveal" />
+
+<Callout type="warning" title="Resource Management">
+The CRTV is not just a tool; it is your primary lifeline. Overusing it in high-stress areas can lead to battery drain, leaving you blind to unseen dangers.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Combat and Survival Strategies">
+
+Survival in St. Amelia is rarely about brute force. Combat in Silent Hill Townfall is intentionally clunky and high-stakes, forcing players to weigh the cost of every bullet and swing. Stealth and evasion are often the most reliable paths to survival, especially when facing entities that cannot be easily incapacitated.
+
+<Steps>
+  <Step num="1" title="Assess the Threat">
+    Use the CRTV to identify the creature's pathing before entering a room.
+  </Step>
+  <Step num="2" title="Choose Your Tactic">
+    If the enemy is stationary, attempt to sneak past. If they block a critical path, prepare for a defensive encounter.
+  </Step>
+  <Step num="3" title="Execute and Escape">
+    Use melee weapons for quick, desperate strikes and firearms only when escape routes are completely cut off.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Stealth Advantage">
+Breaking line of sight is your greatest weapon. Use the environment to loop around enemies rather than engaging them head-on.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Progression and Endings">
+
+The narrative structure of Silent Hill Townfall is designed around the player's internal moral compass. Every interaction with the town’s inhabitants and every puzzle solved provides a piece of the larger mystery surrounding Simon Ordell's return to St. Amelia.
+
+| Ending Type | Requirement | Narrative Impact |
+| :--- | :--- | :--- |
+| **Truth Seeker** | Collect all CRTV fragments | Reveals Simon's past trauma |
+| **Survivor** | Prioritize evasion/stealth | Focuses on escape and safety |
+| **Confrontation** | Engage all optional bosses | Explores the town's darkness |
+| **Forgotten** | Minimalist exploration | Ambiguous, melancholic finish |
+
+<Checklist
+  id="progression-checklist"
+  title="Survival Checklist:"
+  items={[
+    "Scan every room with the CRTV",
+    "Conserve ammunition for mandatory boss encounters",
+    "Read all scattered notes in the clinic",
+    "Maintain high health reserves before entering the Otherworld"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Sparkles} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Is Silent Hill Townfall a direct sequel to the previous games?",
+    answer: "No, Silent Hill Townfall is a self-contained, standalone psychological horror experience with its own unique story and cast."
+  },
+  {
+    question: "How does the CRTV differ from the classic radio?",
+    answer: "While the radio used audio to detect threats, the CRTV provides visual signals through analog static, offering deeper environmental puzzle-solving capabilities."
+  },
+  {
+    question: "Can I switch between first-person and third-person views?",
+    answer: "No, the entire experience is designed in first-person to maximize immersion and the claustrophobic nature of the St. Amelia setting."
+  }
+]} />
+
+</Section>
